@@ -1,10 +1,10 @@
-# Untitled string in Event Schema
+# Untitled undefined type in Event Schema
 
 ```txt
 http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/action_name
 ```
 
-Eric: should have an anyOf with an enum.  .any name you want to call your event. For example, with javascript events, you could include on\_click, logon, add\_to\_cart, page\_scroll
+The name of the action that triggered the event.  We have a set of common defaults, however you can pass in whatever you want.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
@@ -12,4 +12,10 @@ Eric: should have an anyOf with an enum.  .any name you want to call your event.
 
 ## action\_name Type
 
-`string`
+merged type ([Details](event-properties-action_name.md))
+
+one (and only one) of
+
+* [Untitled string in Event](event-properties-action_name-oneof-0.md "check type definition")
+
+* [Untitled string in Event](event-properties-action_name-oneof-1.md "check type definition")

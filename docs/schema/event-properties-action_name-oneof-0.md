@@ -1,21 +1,24 @@
-# Untitled undefined type in Event Schema
+# Untitled string in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id
+http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/action_name/oneOf/0
 ```
 
-The unique identifier of a query, typically a UUID.
+
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [event.request.schema.json\*](../../out/event.request.schema.json "open original schema") |
 
-## query\_id Type
+## 0 Type
 
-merged type ([Details](event-properties-query_id.md))
+`string`
 
-one (and only one) of
+## 0 Constraints
 
-* [Untitled string in Event](event-properties-query_id-oneof-0.md "check type definition")
+**enum**: the value of this property must be equal to one of the following values:
 
-* [Untitled string in Event](event-properties-query_id-oneof-1.md "check type definition")
+| Value             | Explanation |
+| :---------------- | :---------- |
+| `"click_through"` |             |
+| `"add_to_cart"`   |             |

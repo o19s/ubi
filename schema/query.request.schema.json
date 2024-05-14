@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {  
     "query_id": {    
-      "description": "The unique identifier of a query, typically a GUID.",    
+      "description": "The unique identifier of a query, typically a UUID.",    
       "oneOf": [
         {
           "type": "string",

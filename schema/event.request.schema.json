@@ -10,11 +10,19 @@
       "type": "string"
     },
     "action_name": {    
-      "description": "Eric: should have an anyOf with an enum.  .any name you want to call your event. For example, with javascript events, you could include on_click, logon, add_to_cart, page_scroll",    
-      "type": "string"
+      "description": "The name of the action that triggered the event.  We have a set of common defaults, however you can pass in whatever you want.",    
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["click_through", "add_to_cart"]
+        },
+        {
+          "type": "string"
+        }
+      ]
     },
     "query_id": {    
-      "description": "The unique identifier of a query, typically a GUID.",    
+      "description": "The unique identifier of a query, typically a UUID.",    
       "oneOf": [
         {
           "type": "string",

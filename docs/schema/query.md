@@ -22,7 +22,7 @@ A query made by a user
 
 ## query\_id
 
-The unique identifier of a query, typically a GUID.
+The unique identifier of a query, typically a UUID.
 
 `query_id`
 

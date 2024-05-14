@@ -19,7 +19,7 @@ An event that occurred, typically in response to a user.  See <https://github.co
 | Property                     | Type     | Required | Nullable       | Defined by                                                                                                                     |
 | :--------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------- |
 | [application](#application)  | `string` | Optional | cannot be null | [Event](event-properties-application.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/application") |
-| [action\_name](#action_name) | `string` | Optional | cannot be null | [Event](event-properties-action_name.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/action_name") |
+| [action\_name](#action_name) | Merged   | Optional | cannot be null | [Event](event-properties-action_name.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/action_name") |
 | [query\_id](#query_id)       | Merged   | Optional | cannot be null | [Event](event-properties-query_id.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id")       |
 | [timestamp](#timestamp)      | `string` | Optional | cannot be null | [Event](event-properties-timestamp.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/timestamp")     |
 
@@ -43,13 +43,13 @@ name of the application tracking UBI events (e.g. *amazon-shop*, *ABC-microservi
 
 ## action\_name
 
-Eric: should have an anyOf with an enum.  .any name you want to call your event. For example, with javascript events, you could include on\_click, logon, add\_to\_cart, page\_scroll
+The name of the action that triggered the event.  We have a set of common defaults, however you can pass in whatever you want.
 
 `action_name`
 
 * is optional
 
-* Type: `string`
+* Type: merged type ([Details](event-properties-action_name.md))
 
 * cannot be null
 
@@ -57,11 +57,17 @@ Eric: should have an anyOf with an enum.  .any name you want to call your event.
 
 ### action\_name Type
 
-`string`
+merged type ([Details](event-properties-action_name.md))
+
+one (and only one) of
+
+* [Untitled string in Event](event-properties-action_name-oneof-0.md "check type definition")
+
+* [Untitled string in Event](event-properties-action_name-oneof-1.md "check type definition")
 
 ## query\_id
 
-The unique identifier of a query, typically a GUID.
+The unique identifier of a query, typically a UUID.
 
 `query_id`
 
