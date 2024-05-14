@@ -1,0 +1,19 @@
+# Untitled string in Query Response Schema
+
+```txt
+http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id/oneOf/0
+```
+
+
+
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                  |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.response.schema.json\*](../../out/query.response.schema.json "open original schema") |
+
+## 0 Type
+
+`string`
+
+## 0 Constraints
+
+**UUID**: the string must be a UUID, according to [RFC 4122](https://tools.ietf.org/html/rfc4122 "check the specification")
