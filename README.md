@@ -71,11 +71,15 @@ The Schema is documented by itself, but it's much easier to get "the big picture
 <br />
 <br />
 
+### 🏫 Learn More
+
+* Haystack Conf 2024 - Your Search Engine Needs a Memory
+* OpenSearchCon EU - [User Behavior Insights](https://www.youtube.com/watch?v=dH7SPHKpxo0&list=PLzgr9zSpws14zCETcKtCBwcOuTGMccpV9&index=32)
+
 ## 🎨 Who uses it
 
 We are just trialing using UBI as an interchangeable format **to simplify their understanding of what their users are doing** and are looking for more collaborators.
 
-<a href="https://www.getmanfred.com/" target="_blank"><img alt="Manfred" src="./assets/readme/manfred_logo.jpg?raw=true" width="160"/></a> <a href="https://www.sngular.com/" target="_blank"><img alt="SNGULAR" src="./assets/readme/sngular_logo.png?raw=true" width="160"/></a> <a href="https://mobivery.com/" target="_blank"><img alt="MOBIVERY" src="./assets/readme/mobivery_logo.png?raw=true" width="160"/></a> <a href="https://spartacommodities.com/" target="_blank"><img alt="SPARTA" src="./assets/readme/sparta_logo.png?raw=true" width="160"/></a> <a href="https://www.tinybird.co/" target="_blank"><img alt="TINYBIRD" src="./assets/readme/tinybird_logo.jpg?raw=true" width="160"/></a>
 
 ## 🤓 Who we are
 
