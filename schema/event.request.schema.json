@@ -15,7 +15,15 @@
     },
     "query_id": {    
       "description": "The unique identifier of a query, typically a GUID.",    
-      "type": "string"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uuid"
+        },
+        {
+          "type": "string"
+        }
+      ]
     },
     "timestamp": {    
       "description": "When the event took place.",    

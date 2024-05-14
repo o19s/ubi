@@ -20,7 +20,7 @@ An event that occurred, typically in response to a user.  See <https://github.co
 | :--------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------- |
 | [application](#application)  | `string` | Optional | cannot be null | [Event](event-properties-application.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/application") |
 | [action\_name](#action_name) | `string` | Optional | cannot be null | [Event](event-properties-action_name.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/action_name") |
-| [query\_id](#query_id)       | `string` | Optional | cannot be null | [Event](event-properties-query_id.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id")       |
+| [query\_id](#query_id)       | Merged   | Optional | cannot be null | [Event](event-properties-query_id.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id")       |
 | [timestamp](#timestamp)      | `string` | Optional | cannot be null | [Event](event-properties-timestamp.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/timestamp")     |
 
 ## application
@@ -67,7 +67,7 @@ The unique identifier of a query, typically a GUID.
 
 * is optional
 
-* Type: `string`
+* Type: merged type ([Details](event-properties-query_id.md))
 
 * cannot be null
 
@@ -75,7 +75,13 @@ The unique identifier of a query, typically a GUID.
 
 ### query\_id Type
 
-`string`
+merged type ([Details](event-properties-query_id.md))
+
+one (and only one) of
+
+* [Untitled string in Event](event-properties-query_id-oneof-0.md "check type definition")
+
+* [Untitled string in Event](event-properties-query_id-oneof-1.md "check type definition")
 
 ## timestamp
 

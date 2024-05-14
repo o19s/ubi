@@ -16,10 +16,10 @@ The response to a query made by a user.
 
 # Query Response Properties
 
-| Property                                                     | Type     | Required | Nullable       | Defined by                                                                                                                                                               |
-| :----------------------------------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [query\_id](#query_id)                                       | `string` | Required | cannot be null | [Query Response](query-1-properties-query_id.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id")                                     |
-| [query\_response\_objects\_ids](#query_response_objects_ids) | `array`  | Optional | cannot be null | [Query Response](query-1-properties-query_response_objects_ids.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids") |
+| Property                                                     | Type    | Required | Nullable       | Defined by                                                                                                                                                               |
+| :----------------------------------------------------------- | :------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [query\_id](#query_id)                                       | Merged  | Required | cannot be null | [Query Response](query-1-properties-query_id.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id")                                     |
+| [query\_response\_objects\_ids](#query_response_objects_ids) | `array` | Optional | cannot be null | [Query Response](query-1-properties-query_response_objects_ids.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids") |
 
 ## query\_id
 
@@ -29,7 +29,7 @@ The unique identifier of a query, typically a GUID.
 
 * is required
 
-* Type: `string`
+* Type: merged type ([Details](query-1-properties-query_id.md))
 
 * cannot be null
 
@@ -37,7 +37,13 @@ The unique identifier of a query, typically a GUID.
 
 ### query\_id Type
 
-`string`
+merged type ([Details](query-1-properties-query_id.md))
+
+one (and only one) of
+
+* [Untitled string in Query Response](query-1-properties-query_id-oneof-0.md "check type definition")
+
+* [Untitled string in Query Response](query-1-properties-query_id-oneof-1.md "check type definition")
 
 ## query\_response\_objects\_ids
 

@@ -8,7 +8,15 @@
   "properties": {  
     "query_id": {    
       "description": "The unique identifier of a query, typically a GUID.",    
-      "type": "string"
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uuid"
+        },
+        {
+          "type": "string"
+        }
+      ]
     },
     "query_response_objects_ids":{
       "description": "Objects returned by the query",

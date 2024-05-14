@@ -16,9 +16,9 @@ A query made by a user
 
 # Query Request Properties
 
-| Property               | Type     | Required | Nullable       | Defined by                                                                                                                       |
-| :--------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| [query\_id](#query_id) | `string` | Optional | cannot be null | [Query Request](query-properties-query_id.md "http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/query_id") |
+| Property               | Type   | Required | Nullable       | Defined by                                                                                                                       |
+| :--------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| [query\_id](#query_id) | Merged | Optional | cannot be null | [Query Request](query-properties-query_id.md "http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/query_id") |
 
 ## query\_id
 
@@ -28,7 +28,7 @@ The unique identifier of a query, typically a GUID.
 
 * is optional
 
-* Type: `string`
+* Type: merged type ([Details](query-properties-query_id.md))
 
 * cannot be null
 
@@ -36,4 +36,10 @@ The unique identifier of a query, typically a GUID.
 
 ### query\_id Type
 
-`string`
+merged type ([Details](query-properties-query_id.md))
+
+one (and only one) of
+
+* [Untitled string in Query Request](query-properties-query_id-oneof-0.md "check type definition")
+
+* [Untitled string in Query Request](query-properties-query_id-oneof-1.md "check type definition")

@@ -1,21 +1,19 @@
-# Untitled undefined type in Event Schema
+# Untitled string in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id
+http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id/oneOf/0
 ```
 
-The unique identifier of a query, typically a GUID.
+
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [event.request.schema.json\*](../../out/event.request.schema.json "open original schema") |
 
-## query\_id Type
+## 0 Type
 
-merged type ([Details](event-properties-query_id.md))
+`string`
 
-one (and only one) of
+## 0 Constraints
 
-* [Untitled string in Event](event-properties-query_id-oneof-0.md "check type definition")
-
-* [Untitled string in Event](event-properties-query_id-oneof-1.md "check type definition")
+**UUID**: the string must be a UUID, according to [RFC 4122](https://tools.ietf.org/html/rfc4122 "check the specification")
