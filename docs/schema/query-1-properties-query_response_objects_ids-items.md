@@ -1,7 +1,7 @@
-# Untitled string in Query Response Schema
+# Untitled undefined type in Query Response Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids/items/oneOf/0
+http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids/items
 ```
 
 
@@ -10,6 +10,12 @@ http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_r
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.response.schema.json\*](../../out/query.response.schema.json "open original schema") |
 
-## 0 Type
+## items Type
 
-`string`
+merged type ([Details](query-1-properties-query_response_objects_ids-items.md))
+
+any of
+
+* [Untitled string in Query Response](query-1-properties-query_response_objects_ids-items-anyof-0.md "check type definition")
+
+* [Untitled integer in Query Response](query-1-properties-query_response_objects_ids-items-anyof-1.md "check type definition")

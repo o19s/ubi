@@ -2,6 +2,8 @@
 
 ## Top-level Schemas
 
+* [Event](./event.md "An event that occurred, typically in response to a user") – `http://github.com/o19s/ubi/schema/event.request.schema.json`
+
 * [Query Request](./query.md "A query made by a user") – `http://github.com/o19s/ubi/schema/query.request.schema.json`
 
 * [Query Response](./query-1.md "The response to a query made by a user") – `http://github.com/o19s/ubi/schema/query.response.schema.json`

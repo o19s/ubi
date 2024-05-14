@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://github.com/o19s/ubi/schema/query.request.schema.json",
+  "title": "Query Request",
+  "description": "A query made by a user",
+  "type": "object",
+  "properties": {  
+    "query_id": {    
+      "description": "The unique identifier of a query, typically a GUID.",    
+      "type": "string"
+    }
+  }
+}
