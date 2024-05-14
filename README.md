@@ -101,3 +101,5 @@ If you want to say thank you and/or support active development of the MAC:
 
 
 Thanks so much for your interest in growing the reach of UBI!
+
+_This site was inspired by https://github.com/getmanfred/mac.  Thank you!_
