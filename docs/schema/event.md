@@ -1,3 +1,15 @@
+# Event Schema
+
+```txt
+http://github.com/o19s/ubi/schema/event.request.schema.json
+```
+
+An event that occurred, typically in response to a user.  See <https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md> abd <https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json> for more info.
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.request.schema.json](../../out/event.request.schema.json "open original schema") |
+
 ## Event Type
 
 `object` ([Event](event.md))

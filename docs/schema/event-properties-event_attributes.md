@@ -1,3 +1,15 @@
+# Untitled object in Event Schema
+
+```txt
+http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes
+```
+
+Extensible details about a specific event.
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.request.schema.json\*](../../out/event.request.schema.json "open original schema") |
+
 ## event\_attributes Type
 
 `object` ([Details](event-properties-event_attributes.md))
