@@ -1,15 +1,3 @@
-# Query Response Schema
-
-```txt
-http://github.com/o19s/ubi/schema/query.response.schema.json
-```
-
-The response to a query made by a user.
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [query.response.schema.json](../../out/query.response.schema.json "open original schema") |
-
 ## Query Response Type
 
 `object` ([Query Response](query-1.md))

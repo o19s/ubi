@@ -4,6 +4,7 @@
   "title": "Query Request",
   "description": "A query made by a user",
   "type": "object",
+    "required": [ "user_query" ],
   "properties": {  
     "query_id": {    
       "description": "The unique identifier of a query, typically a UUID.",    
@@ -16,6 +17,11 @@
           "type": "string"
         }
       ]
+    },
+    "user_query":{
+      "description": "ERIC: Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices.",
+      "type": "object",
+      "additionalProperties": true
     }
   }
 }

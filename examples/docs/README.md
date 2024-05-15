@@ -18,6 +18,8 @@
 
 * [Untitled object in Event](./event-properties-event_attributes-properties-attributes.md "structure which contains identifying information of the object returned from the query that the user interacts with (i") – `http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/attributes`
 
+* [Untitled object in Query Request](./query-properties-user_query.md "ERIC: Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices") – `http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/user_query`
+
 ### Arrays
 
 * [Untitled array in Query Response](./query-1-properties-query_response_objects_ids.md "Objects returned by the query") – `http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids`

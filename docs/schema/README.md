@@ -12,7 +12,13 @@
 
 ### Objects
 
+* [Untitled object in Event](./event-properties-event_attributes.md "Extensible details about a specific event") – `http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes`
 
+* [Untitled object in Event](./event-properties-event_attributes-properties-position.md "structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results, ") – `http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/position`
+
+* [Untitled object in Event](./event-properties-event_attributes-properties-attributes.md "structure which contains identifying information of the object returned from the query that the user interacts with (i") – `http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/attributes`
+
+* [Untitled object in Query Request](./query-properties-user_query.md "ERIC: Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices") – `http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/user_query`
 
 ### Arrays
 
