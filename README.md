@@ -36,11 +36,6 @@ There are A LOT of tools out there for tracking events, Google Analytics, Snowpl
 The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms.
 
 
-<div align="center">
-  <img src='https://github.com/o19s/ubi/blob/master/assets/readme/MAC_Structure.png?raw=true' width='600px' alt="UBI Structure">
- </div>
-
-
 ## 🪛 How to use it
 
 The UBI standard is implemented by various platforms, and click through to learn more about using it with your chosen solution.
@@ -68,7 +63,10 @@ You can check **examples of how to use code to create and validate MAC files** i
 ---
 
 The Schema is documented by itself, but it's much easier to get "the big picture" with [a graphical representation](https://github.com/o19s/ubi/blob/main/assets/readme/UBI_diagram.png).
-<br />
+
+<div align="center">
+  <img src='https://github.com/o19s/ubi/blob/main/assets/readme/UBI_diagram.png?raw=true' width='600px' alt="UBI Diagram">
+ </div>
 <br />
 
 ### 🏫 Learn More
