@@ -4,7 +4,7 @@
   "title": "Unique Query Identification",
   "description": "The label for a unique query.  Any change to a query structure will generate a new query_id.",
   "required": [ "query_id" ],
-  "type": "string",
+  "type": "object",
   "properties": {
     "query_id": {    
       "description": "The unique identifier of a query, typically a UUID.",    
