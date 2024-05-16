@@ -1,25 +1,15 @@
-# Untitled string in Event Schema
+# Untitled object in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/query_id/oneOf/0
+http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object
 ```
 
-
+structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [event.request.schema.json\*](../../out/event.request.schema.json "open original schema") |
 
-## 0 Type
+## object Type
 
-`string`
-
-## 0 Constraints
-
-**UUID**: the string must be a UUID, according to [RFC 4122](https://tools.ietf.org/html/rfc4122 "check the specification")
-
-## 0 Examples
-
-```json
-"00112233-4455-6677-8899-aabbccddeeff"
-```
+`object` ([Details](event-properties-event_attributes-properties-object.md))

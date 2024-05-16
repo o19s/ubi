@@ -4,7 +4,7 @@
   "title": "Query Request",
   "description": "A query made by a user",
   "type": "object",
-    "required": [ "user_query" ],
+  "required": [ "user_query" ],
   "properties": {  
     "query_id": {    
       "description": "The unique identifier of a query, typically a UUID.",    

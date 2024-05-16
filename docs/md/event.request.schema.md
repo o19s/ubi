@@ -12,7 +12,7 @@
 - [6. Property `Event > message`](#message)
 - [7. Property `Event > event_attributes`](#event_attributes)
   - [7.1. Property `Event > event_attributes > position`](#event_attributes_position)
-  - [7.2. Property `Event > event_attributes > attributes`](#event_attributes_attributes)
+  - [7.2. Property `Event > event_attributes > object`](#event_attributes_object)
 
 **Title:** Event
 
@@ -99,12 +99,24 @@ Must be one of:
 | **Required** | No       |
 | **Format**   | `uuid`   |
 
+**Example:** 
+
+```json
+"00112233-4455-6677-8899-aabbccddeeff"
+```
+
 ### <a name="query_id_oneOf_i1"></a>3.2. Property `Event > query_id > oneOf > item 1`
 
 |              |          |
 | ------------ | -------- |
 | **Type**     | `string` |
 | **Required** | No       |
+
+**Example:** 
+
+```json
+"1234-user-5678"
+```
 
 ## <a name="timestamp"></a>4. Property `Event > timestamp`
 
@@ -144,10 +156,10 @@ Must be one of:
 
 **Description:** Extensible details about a specific event.
 
-| Property                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                                                                                                                             |
-| --------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| - [position](#event_attributes_position )     | No      | object | No         | -          | structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results, ....            |
-| - [attributes](#event_attributes_attributes ) | No      | object | No         | -          | structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..). |
+| Property                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                                                                                                                             |
+| ----------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| - [position](#event_attributes_position ) | No      | object | No         | -          | structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results, ....            |
+| - [object](#event_attributes_object )     | No      | object | No         | -          | structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..). |
 
 ### <a name="event_attributes_position"></a>7.1. Property `Event > event_attributes > position`
 
@@ -159,7 +171,7 @@ Must be one of:
 
 **Description:** structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results, ....
 
-### <a name="event_attributes_attributes"></a>7.2. Property `Event > event_attributes > attributes`
+### <a name="event_attributes_object"></a>7.2. Property `Event > event_attributes > object`
 
 |                           |                                                                           |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -170,4 +182,4 @@ Must be one of:
 **Description:** structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2024-05-15 at 12:29:29 -0400
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2024-05-16 at 14:18:47 -0400

@@ -27,10 +27,12 @@
       "oneOf": [
         {
           "type": "string",
-          "format": "uuid"
+          "format": "uuid",
+          "examples": ["00112233-4455-6677-8899-aabbccddeeff"]
         },
         {
-          "type": "string"
+          "type": "string",
+          "examples": ["1234-user-5678"]
         }
       ]
     },
@@ -55,7 +57,7 @@
           "description": "structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results, ....",
           "type": "object"
         },
-        "attributes": {
+        "object": {
           "description": "structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).",          
           "type": "object"          
         }
