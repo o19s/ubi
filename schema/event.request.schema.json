@@ -23,9 +23,8 @@
       ]
     },
     "query_id": {
-      "description": "The unique identifier of a query.",
-      "$ref": "http://github.com/o19s/ubi/schema/query_id.schema.json"
-    },
+          "$ref": "https://raw.githubusercontent.com/o19s/ubi/main/schema/query_id.schema.json#/definitions/query_id"
+        }
 
     "query_id2": {
       "description": "The unique identifier of a query, typically a UUID.",

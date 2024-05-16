@@ -1,13 +1,11 @@
 {
-  "$id": "http://github.com/o19s/ubi/schema/query_id.schema.json",
+  "$id": "https://raw.githubusercontent.com/o19s/ubi/main/schema/query_id.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Unique Query Identification",
-  "description": "The label for a unique query.  Any change to a query structure will generate a new query_id.",
-  "required": [ "query_id" ],
-  "type": "object",
-  "properties": {
-    "query_id": {    
-      "description": "The unique identifier of a query, typically a UUID.",    
+  "description": "The label for a unique query. Any change to a query structure will generate a new query_id.",
+  "definitions": {
+    "query_id": {
+      "description": "The unique identifier of a query, typically a UUID.",
       "oneOf": [
         {
           "type": "string",

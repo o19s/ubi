@@ -20,7 +20,7 @@ pip install json-schema-for-humans
 generate-schema-doc --config description_is_markdown=true --config show_toc=true --config template_name=md ./schema ./docs/md
 # generated output for whole folder is written to ./docs/md
 
-generate-schema-doc --config description_is_markdown=true --config show_toc=true --config template_name=js ./schema ./docs/html
+generate-schema-doc --config-file jsfh-conf.yaml ./schema ./docs/html
 # generated output for whole folder is written to ./docs/html
 
 ```
