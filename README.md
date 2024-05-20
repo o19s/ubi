@@ -45,9 +45,10 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 
 | JSON Schema | HTML Docs |
 | --- | --- |
-| [event.schema.json](https://o19s.github.io/ubi/schema/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
-| [query.request.schema.json](https://o19s.github.io/ubi/schema/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/query.request.schema.html) |
+ [query.request.schema.json](https://o19s.github.io/ubi/schema/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/query.request.schema.html) |
 | [query.response.schema.json](https://o19s.github.io/ubi/schema/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/query.response.schema.html) |
+| [event.schema.json](https://o19s.github.io/ubi/schema/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
+|
 
 
 To validate 
