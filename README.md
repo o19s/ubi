@@ -48,24 +48,17 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
  [query.request.schema.json](https://o19s.github.io/ubi/schema/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/query.request.schema.html) |
 | [query.response.schema.json](https://o19s.github.io/ubi/schema/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/query.response.schema.html) |
 | [event.schema.json](https://o19s.github.io/ubi/schema/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
-|
-
 
 To validate 
-You just need to copy, download or reference [the schema](https://github.com/o19s/ubi/blob/master/schema/schema.json) to validate an event, built as a JSON file from scratch, or a JSON generated previously (for example, [this sample](https://github.com/o19s/ubi/blob/master/samples/default_sample_ES.json)).  ** ERIC, what about query versus event **
+You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).  
 
 To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator).
 
 !["JSON Schema"](https://github.com/o19s/ubi/blob/master/assets/readme/MAC_online_validator_example.png?raw=true "JSON Schema")
 
-You also have implementations to validate a JSON file programmatically in almost every coding language:
+You also have implementations to validate a JSON file programmatically in almost every [coding language](https://json-schema.org/implementations.html).
 
-* [AVJ (JavaScript)](https://ajv.js.org/)
-* [Snow (Java)](https://github.com/ssilverman/snowy-json)
-* [jschon (Python)](https://jschon.readthedocs.io/en/latest/)
-* ... and [much more](https://json-schema.org/implementations.html)
-
-> :warning: **The current MAC Schema has been designed using the 2019-09 Specification Draft**: When choosing a validator, please, check if it's compliant with the 2019-09 Draft. You can get much more information about the JSON Schema Specification in [json-schema.org](https://json-schema.org/).
+> :warning: **The current UBI Schema has been designed using the 2020-12 Specification Draft**: When choosing a validator, please, check if it's compliant with the 2020-12 Draft. You can get much more information about the JSON Schema Specification in [json-schema.org](https://json-schema.org/).
 
 You can check **examples of how to use code to create and validate MAC files** in the [MAC/scripts](https://github.com/getmanfred/mac/tree/master/scripts) directory.
 
@@ -80,12 +73,12 @@ The Schema is documented by itself, but it's much easier to get "the big picture
 
 ### 🏫 Learn More
 
-* Haystack Conf 2024 - Your Search Engine Needs a Memory
 * OpenSearchCon EU - [User Behavior Insights](https://www.youtube.com/watch?v=dH7SPHKpxo0&list=PLzgr9zSpws14zCETcKtCBwcOuTGMccpV9&index=32)
+* Haystack Conf 2024 - Your Search Engine Needs a Memory
 
 ## 🎨 Who uses it
 
-We are just trialing using UBI as an interchangeable format **to simplify their understanding of what their users are doing** and are looking for more collaborators.
+We are trialing UBI as an interchangeable format **to simplify understanding of what users are doing** and are looking for more collaborators.
 
 
 ## 🤓 Who we are
@@ -100,7 +93,7 @@ Please refer to our [Contribution Guidelines](https://github.com/o19s/ubi/blob/m
 
 ## ⚖️ License
 
-UBI is free and open-source software licensed and distributed under the Creative Commons Attribution Share Alike 4.0 International (CC BY-SA 4.0 International). ** ERIC: ASL?? WHat do standards like/  **
+UBI is free and open-source software licensed and distributed under the Creative Commons Attribution Share Alike 4.0 International (CC BY-SA 4.0 International). ** ERIC: ASL?? WHat do standards like?  **
 
 ## 🌟 Spread the word!
 
@@ -108,7 +101,7 @@ If you want to say thank you and/or support active development of the MAC:
 
 - Add a GitHub Star to the project!
 - ???
---?
+- ?
 
 
 Thanks so much for your interest in growing the reach of UBI!
