@@ -45,7 +45,7 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 
 | JSON Schema | HTML Docs |
 | --- | --- |
-| Value 1 | Value 2 |
+| [event.schema.json](https://o19s.github.io/ubi/schema/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
 
 
 To validate 
