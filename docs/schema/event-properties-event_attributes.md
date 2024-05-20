@@ -16,10 +16,29 @@ Extensible details about a specific event.
 
 # event\_attributes Properties
 
-| Property              | Type     | Required | Nullable       | Defined by                                                                                                                                                                       |
-| :-------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [position](#position) | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-position.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/position") |
-| [object](#object)     | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object")     |
+| Property                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                           |
+| :------------------------ | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [object](#object)         | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object")         |
+| [position](#position)     | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-position.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/position")     |
+| [properties](#properties) | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-properties.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/properties") |
+
+## object
+
+structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
+
+`object`
+
+* is optional
+
+* Type: `object` ([Details](event-properties-event_attributes-properties-object.md))
+
+* cannot be null
+
+* defined in: [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object")
+
+### object Type
+
+`object` ([Details](event-properties-event_attributes-properties-object.md))
 
 ## position
 
@@ -39,20 +58,20 @@ structure that contains information on the location of the event origin, such as
 
 `object` ([Details](event-properties-event_attributes-properties-position.md))
 
-## object
+## properties
 
 structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
 
-`object`
+`properties`
 
 * is optional
 
-* Type: `object` ([Details](event-properties-event_attributes-properties-object.md))
+* Type: `object` ([Details](event-properties-event_attributes-properties-properties.md))
 
 * cannot be null
 
-* defined in: [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object")
+* defined in: [Event](event-properties-event_attributes-properties-properties.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/properties")
 
-### object Type
+### properties Type
 
-`object` ([Details](event-properties-event_attributes-properties-object.md))
+`object` ([Details](event-properties-event_attributes-properties-properties.md))
