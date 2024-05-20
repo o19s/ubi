@@ -1,0 +1,17 @@
+{
+  "query" : "ram OR memory",
+  "filter": [
+      "inStock:true"
+  ],
+  "limit":2,
+  "params": {
+    "ubi": "true",
+    "query_id": "xyz890",
+    "user_query": {
+      "query": "RAM memory",
+      "experiment": "supersecret",
+      "page": 1,
+      "filter": "productStatus:available"
+    }            
+  }
+}
