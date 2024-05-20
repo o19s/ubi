@@ -20,4 +20,4 @@ curl -X POST -H 'Content-type:application/json' -d '{
 }' "http://localhost:9200/ecommerce/_search"
 ```
 
-__Eventually the `user_query` should take not just a string but a map of all the fields.
+Eventually the `user_query` should take not just a string but a map of all the fields.
