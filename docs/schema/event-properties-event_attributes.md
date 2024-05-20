@@ -1,14 +1,14 @@
 # Untitled object in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes
+http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes
 ```
 
 Extensible details about a specific event.
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.request.schema.json\*](../../out/event.request.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json\*](../../out/event.schema.json "open original schema") |
 
 ## event\_attributes Type
 
@@ -16,11 +16,11 @@ Extensible details about a specific event.
 
 # event\_attributes Properties
 
-| Property                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                           |
-| :------------------------ | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [object](#object)         | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object")         |
-| [position](#position)     | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-position.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/position")     |
-| [properties](#properties) | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-properties.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/properties") |
+| Property                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                   |
+| :------------------------ | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [object](#object)         | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes/properties/object")         |
+| [position](#position)     | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-position.md "http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes/properties/position")     |
+| [properties](#properties) | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-properties.md "http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes/properties/properties") |
 
 ## object
 
@@ -34,7 +34,7 @@ structure which contains identifying information of the object returned from the
 
 * cannot be null
 
-* defined in: [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/object")
+* defined in: [Event](event-properties-event_attributes-properties-object.md "http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes/properties/object")
 
 ### object Type
 
@@ -52,7 +52,7 @@ structure that contains information on the location of the event origin, such as
 
 * cannot be null
 
-* defined in: [Event](event-properties-event_attributes-properties-position.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/position")
+* defined in: [Event](event-properties-event_attributes-properties-position.md "http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes/properties/position")
 
 ### position Type
 
@@ -70,7 +70,7 @@ structure which contains identifying information of the object returned from the
 
 * cannot be null
 
-* defined in: [Event](event-properties-event_attributes-properties-properties.md "http://github.com/o19s/ubi/schema/event.request.schema.json#/properties/event_attributes/properties/properties")
+* defined in: [Event](event-properties-event_attributes-properties-properties.md "http://github.com/o19s/ubi/schema/event.schema.json#/properties/event_attributes/properties/properties")
 
 ### properties Type
 

@@ -33,16 +33,22 @@ Many Search teams struggle with understanding "Why is my user doing this".  They
 
 There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in.  None of them think about the needs of Search teams specifically either.
 
-The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms.
+The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms.  There are implementations for
+ * OpenSearch
+ * [Apache Solr](https://github.com/apache/solr/pull/2452)
 
 
 ## 🪛 How to use it
 
-The UBI standard is implemented by various platforms, and click through to learn more about using it with your chosen solution.
- * OpenSearch
- * [Apache Solr](https://github.com/apache/solr/pull/2452)
  
-UBI requires coordination between the client (a browser, a mobile app, etc) and the backend, which is documented using JSON Schema.  To validate 
+UBI requires coordination between the client (a browser, a mobile app, etc) and the backend, which is documented using JSON Schema.  
+
+| JSON Schema | HTML Docs |
+| --- | --- |
+| Value 1 | Value 2 |
+
+
+To validate 
 You just need to copy, download or reference [the schema](https://github.com/o19s/ubi/blob/master/schema/schema.json) to validate an event, built as a JSON file from scratch, or a JSON generated previously (for example, [this sample](https://github.com/o19s/ubi/blob/master/samples/default_sample_ES.json)).  ** ERIC, what about query versus event **
 
 To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator).

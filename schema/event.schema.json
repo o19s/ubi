@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "http://github.com/o19s/ubi/schema/event.request.schema.json",
+  "$id": "http://github.com/o19s/ubi/schema/event.schema.json",
   "title": "Event",
   "description": "An event that occurred, typically in response to a user.  See https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md abd https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json for more info.",
   "type": "object",
