@@ -13,3 +13,9 @@ http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/query_id
 ## 1 Type
 
 `string`
+
+## 1 Examples
+
+```json
+"1234-user-5678"
+```

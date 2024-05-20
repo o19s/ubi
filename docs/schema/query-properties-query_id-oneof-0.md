@@ -17,3 +17,9 @@ http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/query_id
 ## 0 Constraints
 
 **UUID**: the string must be a UUID, according to [RFC 4122](https://tools.ietf.org/html/rfc4122 "check the specification")
+
+## 0 Examples
+
+```json
+"00112233-4455-6677-8899-aabbccddeeff"
+```
