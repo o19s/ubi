@@ -1,28 +1,29 @@
-# Untitled string in Event Schema
+# Untitled integer in Event Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/event.schema.json#/properties/action_name/oneOf/0
+https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/position/oneOf/0/properties/ordinal/properties/index
 ```
 
-
+The position of the document.  For grid layout this would be left to right, ignoring wrapping.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [event.schema.json\*](../../out/event.schema.json "open original schema") |
 
-## 0 Type
+## index Type
 
-`string`
+`integer`
 
-## 0 Constraints
+## index Examples
 
-**enum**: the value of this property must be equal to one of the following values:
+```json
+1
+```
 
-| Value             | Explanation |
-| :---------------- | :---------- |
-| `"click_through"` |             |
-| `"add_to_cart"`   |             |
-| `"click"`         |             |
-| `"watch"`         |             |
-| `"view"`          |             |
-| `"purchase"`      |             |
+```json
+3
+```
+
+```json
+24
+```

@@ -4,7 +4,7 @@
 https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_id
 ```
 
-The unique identifier of a query, typically a UUID.
+The unique identifier of a query, typically a UUID, but can be any string.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                  |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------ |

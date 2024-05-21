@@ -16,15 +16,15 @@ Extensible details about a specific event.
 
 # event\_attributes Properties
 
-| Property                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                   |
-| :------------------------ | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [object](#object)         | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-object.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/object")         |
-| [position](#position)     | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-position.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/position")     |
-| [properties](#properties) | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-properties.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/properties") |
+| Property              | Type     | Required | Nullable       | Defined by                                                                                                                                                               |
+| :-------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [object](#object)     | `object` | Optional | cannot be null | [Event](event-properties-event_attributes-properties-object.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/object")     |
+| [position](#position) | Merged   | Required | cannot be null | [Event](event-properties-event_attributes-properties-position.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/position") |
+| Additional Properties | Any      | Optional | can be null    |                                                                                                                                                                          |
 
 ## object
 
-structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
+Structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
 
 `object`
 
@@ -42,11 +42,11 @@ structure which contains identifying information of the object returned from the
 
 ## position
 
-structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results, ....
+Structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results.
 
 `position`
 
-* is optional
+* is required
 
 * Type: `object` ([Details](event-properties-event_attributes-properties-position.md))
 
@@ -58,20 +58,12 @@ structure that contains information on the location of the event origin, such as
 
 `object` ([Details](event-properties-event_attributes-properties-position.md))
 
-## properties
+one (and only one) of
 
-structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
+* [Untitled object in Event](event-properties-event_attributes-properties-position-oneof-0.md "check type definition")
 
-`properties`
+* [Untitled object in Event](event-properties-event_attributes-properties-position-oneof-1.md "check type definition")
 
-* is optional
+## Additional Properties
 
-* Type: `object` ([Details](event-properties-event_attributes-properties-properties.md))
-
-* cannot be null
-
-* defined in: [Event](event-properties-event_attributes-properties-properties.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/properties")
-
-### properties Type
-
-`object` ([Details](event-properties-event_attributes-properties-properties.md))
+Additional properties are allowed and do not have to follow a specific schema

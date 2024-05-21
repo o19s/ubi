@@ -4,7 +4,7 @@
 https://o19s.github.io/ubi/schema/event.schema.json#/properties/application
 ```
 
-name of the application tracking UBI events (e.g. *amazon-shop*, *ABC-microservice*)
+name of the application tracking UBI events.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------ |
@@ -13,3 +13,17 @@ name of the application tracking UBI events (e.g. *amazon-shop*, *ABC-microservi
 ## application Type
 
 `string`
+
+## application Examples
+
+```json
+"amazon-shop"
+```
+
+```json
+"ABC-microservice"
+```
+
+```json
+"doctor-search"
+```

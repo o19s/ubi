@@ -4,7 +4,7 @@
 https://o19s.github.io/ubi/schema/event.schema.json
 ```
 
-An event that occurred, typically in response to a user.  See <https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md> abd <https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json> for more info.
+An event that occurred, typically in response to a user.  See [schemas.md](https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md) and [events-mapping.json](https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json) for more info.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                              |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ An event that occurred, typically in response to a user.  See <https://github.co
 
 ## application
 
-name of the application tracking UBI events (e.g. *amazon-shop*, *ABC-microservice*)
+name of the application tracking UBI events.
 
 `application`
 
@@ -43,6 +43,20 @@ name of the application tracking UBI events (e.g. *amazon-shop*, *ABC-microservi
 ### application Type
 
 `string`
+
+### application Examples
+
+```json
+"amazon-shop"
+```
+
+```json
+"ABC-microservice"
+```
+
+```json
+"doctor-search"
+```
 
 ## action\_name
 
@@ -70,7 +84,7 @@ one (and only one) of
 
 ## query\_id
 
-The unique identifier of a query, typically a UUID.
+The unique identifier of a query, typically a UUID, but can be any string.
 
 `query_id`
 
@@ -114,9 +128,17 @@ When the event took place.
 
 **date time**: the string must be a date time string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
 
+### timestamp Examples
+
+```json
+"2018-11-13T20:20:39+00:00"
+```
+
 ## message\_type
 
-ERIC: action\_type?  event\_type?  Should the front end define this?  Group various action\_name into logical bins.
+Group various `action_name`'s into logical bins.
+
+> TDB: action\_type?  event\_type?  Should the front end even define this?
 
 `message_type`
 
@@ -132,9 +154,19 @@ ERIC: action\_type?  event\_type?  Should the front end define this?  Group vari
 
 `string`
 
+### message\_type Examples
+
+```json
+"QUERY"
+```
+
+```json
+"CONVERSION"
+```
+
 ## message
 
-optional text message for the log entry. For example, with a message\_type of INFO, people might expect an informational or debug type text for this field, but a message\_type of QUERY, we would expect the text to be more about what the user is searching on.
+Optional text message for the log entry. For example, for a message\_type of QUERY, we would expect the text to be about what the user is searching on.
 
 `message`
 
@@ -149,6 +181,10 @@ optional text message for the log entry. For example, with a message\_type of IN
 ### message Type
 
 `string`
+
+### message Constraints
+
+**maximum length**: the maximum number of characters for this string is: `1024`
 
 ## event\_attributes
 

@@ -4,7 +4,9 @@
 https://o19s.github.io/ubi/schema/event.schema.json#/properties/message_type
 ```
 
-ERIC: action\_type?  event\_type?  Should the front end define this?  Group various action\_name into logical bins.
+Group various `action_name`'s into logical bins.
+
+> TDB: action\_type?  event\_type?  Should the front end even define this?
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------ |
@@ -13,3 +15,13 @@ ERIC: action\_type?  event\_type?  Should the front end define this?  Group vari
 ## message\_type Type
 
 `string`
+
+## message\_type Examples
+
+```json
+"QUERY"
+```
+
+```json
+"CONVERSION"
+```

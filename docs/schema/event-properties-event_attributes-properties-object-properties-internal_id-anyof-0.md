@@ -1,7 +1,7 @@
 # Untitled string in Event Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/event.schema.json#/properties/action_name/oneOf/0
+https://o19s.github.io/ubi/schema/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id/anyOf/0
 ```
 
 
@@ -13,16 +13,3 @@ https://o19s.github.io/ubi/schema/event.schema.json#/properties/action_name/oneO
 ## 0 Type
 
 `string`
-
-## 0 Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value             | Explanation |
-| :---------------- | :---------- |
-| `"click_through"` |             |
-| `"add_to_cart"`   |             |
-| `"click"`         |             |
-| `"watch"`         |             |
-| `"view"`          |             |
-| `"purchase"`      |             |
