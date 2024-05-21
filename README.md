@@ -52,7 +52,20 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 To validate 
 You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).  
 
-To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator).
+To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator).  Make sure to just copy the UBI related portions, and not any of the search engine specific code.  Here is the UBI portion from the file [query-solr.json](https://github.com/o19s/ubi/blob/master/samples/query-solr.json) for example:
+
+```json
+{
+  "ubi": "true",
+  "query_id": "xyz890",
+  "user_query": {
+    "query": "RAM memory",
+    "experiment": "supersecret",
+    "page": 1,
+    "filter": "productStatus:available"
+  }            
+}
+```
 
 !["JSON Schema"](https://github.com/o19s/ubi/blob/master/assets/readme/MAC_online_validator_example.png?raw=true "JSON Schema")
 
