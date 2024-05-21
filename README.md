@@ -2,7 +2,7 @@
 
 # User Behavior Insights
 
-UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standard open source format to define and share user event tracking information**. The format is defined as a JSON Schema to validate queries and events defined as JSON files.
+UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standard open source format to define and share user event tracking information**. The format is defined as a JSON Schema to validate queries and events defined as JSON objects.
  
  <a href='https://github.com/o19s/ubi/releases'>
   <img src='https://img.shields.io/github/v/release/o19s/ubi?color=%23FDD835&label=version&style=for-the-badge&logo=JSON' alt="Version Badge">
@@ -105,7 +105,7 @@ Please refer to our [Contribution Guidelines](https://github.com/o19s/ubi/blob/m
 
 ## ⚖️ License
 
-UBI is free and open-source software licensed and distributed under the Creative Commons Attribution Share Alike 4.0 International (CC BY-SA 4.0 International). ** ERIC: ASL?? WHat do standards like?  **
+UBI is available under the Apache Software License, version 2.
 
 ## 🌟 Spread the word!
 
