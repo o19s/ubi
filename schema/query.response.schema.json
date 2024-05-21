@@ -19,20 +19,6 @@
           "examples": ["1234-user-5678"]
         }
       ]
-    },
-    "query_response_objects_ids":{
-      "description": "Objects returned by the query.  Maps to the `object_id` field in a event.",
-      "type": "array",
-      "items": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "integer"
-          }
-        ]
-      }
     }
   }
 }

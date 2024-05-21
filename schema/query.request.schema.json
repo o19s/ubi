@@ -21,10 +21,14 @@
       ]
     },
     "user_query":{
-      "description": "The query as the user entered it, with any modifiers like filter choices or pagination.",
+      "description": "The query as the user entered it.",
+      "type": "string",
+      "$comment": "Currently not required to support recommendation systems etc that might not have a user generated query."
+    },
+    "query_attributes":{
+      "description": "Any query modifiers like filter choices or pagination. Other attributes such as experiment identifiers that need to be tracked with the query.",
       "type": "object",
-      "additionalProperties": true,
-      "$comment": "TBD Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices."
+      "additionalProperties": true
     }
   }
 }

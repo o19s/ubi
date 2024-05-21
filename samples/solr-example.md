@@ -28,6 +28,7 @@ curl -X POST -H 'Content-type:application/json' -d '{
 
 Issue a Query using Solr's JSON Query format with embedded UBI settings:
   
+
 ```
 curl -X POST -H 'Content-type:application/json' -d '{
   "query" : "ram OR memory",
@@ -38,9 +39,9 @@ curl -X POST -H 'Content-type:application/json' -d '{
   "params": {
     "ubi": "true",
     "query_id": "xyz890",
-    "user_query": {
-      "query": "RAM memory",
-      "experiment": "supersecret",
+    "user_query": "RAM memory",
+    "query_attributes": {
+      "experiment": "supersecret",      
       "page": 1,
       "filter": "productStatus:available"
     }            
