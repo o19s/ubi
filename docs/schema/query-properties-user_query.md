@@ -1,7 +1,7 @@
 # Untitled object in Query Request Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/user_query
+https://o19s.github.io/ubi/schema/query.request.schema.json#/properties/user_query
 ```
 
 ERIC: Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices.

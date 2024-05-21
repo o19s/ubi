@@ -7,7 +7,7 @@
   "required": [ "user_query" ],
   "properties": {  
     "query_id": {
-      "description": "The unique identifier of a query, typically a UUID.",
+      "description": "The unique identifier of a query, typically a UUID, but can be any string.",
       "oneOf": [
         {
           "type": "string",
@@ -21,9 +21,10 @@
       ]
     },
     "user_query":{
-      "description": "ERIC: Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices.",
+      "description": "The query as the user entered it, with any modifiers like filter choices or pagination.",
       "type": "object",
-      "additionalProperties": true
+      "additionalProperties": true,
+      "$comment": "TBD Should we require a query in user query? The query as the user entered it, plus any options they chose to change the query, like aggregation/facet choices."
     }
   }
 }

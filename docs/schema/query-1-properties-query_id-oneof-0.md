@@ -1,7 +1,7 @@
 # Untitled string in Query Response Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id/oneOf/0
+https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_id/oneOf/0
 ```
 
 

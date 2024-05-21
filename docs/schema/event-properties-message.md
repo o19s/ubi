@@ -1,7 +1,7 @@
 # Untitled string in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.schema.json#/properties/message
+https://o19s.github.io/ubi/schema/event.schema.json#/properties/message
 ```
 
 optional text message for the log entry. For example, with a message\_type of INFO, people might expect an informational or debug type text for this field, but a message\_type of QUERY, we would expect the text to be more about what the user is searching on.

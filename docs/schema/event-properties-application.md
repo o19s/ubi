@@ -1,7 +1,7 @@
 # Untitled string in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.schema.json#/properties/application
+https://o19s.github.io/ubi/schema/event.schema.json#/properties/application
 ```
 
 name of the application tracking UBI events (e.g. *amazon-shop*, *ABC-microservice*)

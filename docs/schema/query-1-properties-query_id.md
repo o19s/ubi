@@ -1,7 +1,7 @@
 # Untitled undefined type in Query Response Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id
+https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_id
 ```
 
 The unique identifier of a query, typically a UUID.

@@ -1,7 +1,7 @@
 # Untitled string in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.schema.json#/properties/message_type
+https://o19s.github.io/ubi/schema/event.schema.json#/properties/message_type
 ```
 
 ERIC: action\_type?  event\_type?  Should the front end define this?  Group various action\_name into logical bins.

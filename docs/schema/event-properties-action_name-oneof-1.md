@@ -1,7 +1,7 @@
 # Untitled string in Event Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/event.schema.json#/properties/action_name/oneOf/1
+https://o19s.github.io/ubi/schema/event.schema.json#/properties/action_name/oneOf/1
 ```
 
 

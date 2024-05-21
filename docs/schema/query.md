@@ -1,7 +1,7 @@
 # Query Request Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/query.request.schema.json
+https://o19s.github.io/ubi/schema/query.request.schema.json
 ```
 
 A query made by a user
@@ -18,8 +18,8 @@ A query made by a user
 
 | Property                   | Type     | Required | Nullable       | Defined by                                                                                                                           |
 | :------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| [query\_id](#query_id)     | Merged   | Optional | cannot be null | [Query Request](query-properties-query_id.md "http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/query_id")     |
-| [user\_query](#user_query) | `object` | Required | cannot be null | [Query Request](query-properties-user_query.md "http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/user_query") |
+| [query\_id](#query_id)     | Merged   | Optional | cannot be null | [Query Request](query-properties-query_id.md "https://o19s.github.io/ubi/schema/query.request.schema.json#/properties/query_id")     |
+| [user\_query](#user_query) | `object` | Required | cannot be null | [Query Request](query-properties-user_query.md "https://o19s.github.io/ubi/schema/query.request.schema.json#/properties/user_query") |
 
 ## query\_id
 
@@ -33,7 +33,7 @@ The unique identifier of a query, typically a UUID.
 
 * cannot be null
 
-* defined in: [Query Request](query-properties-query_id.md "http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/query_id")
+* defined in: [Query Request](query-properties-query_id.md "https://o19s.github.io/ubi/schema/query.request.schema.json#/properties/query_id")
 
 ### query\_id Type
 
@@ -57,7 +57,7 @@ ERIC: Should we require a query in user query? The query as the user entered it,
 
 * cannot be null
 
-* defined in: [Query Request](query-properties-user_query.md "http://github.com/o19s/ubi/schema/query.request.schema.json#/properties/user_query")
+* defined in: [Query Request](query-properties-user_query.md "https://o19s.github.io/ubi/schema/query.request.schema.json#/properties/user_query")
 
 ### user\_query Type
 

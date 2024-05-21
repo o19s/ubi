@@ -1,7 +1,7 @@
 # Query Response Schema
 
 ```txt
-http://github.com/o19s/ubi/schema/query.response.schema.json
+https://o19s.github.io/ubi/schema/query.response.schema.json
 ```
 
 The response to a query made by a user.
@@ -18,8 +18,8 @@ The response to a query made by a user.
 
 | Property                                                     | Type    | Required | Nullable       | Defined by                                                                                                                                                               |
 | :----------------------------------------------------------- | :------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [query\_id](#query_id)                                       | Merged  | Required | cannot be null | [Query Response](query-1-properties-query_id.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id")                                     |
-| [query\_response\_objects\_ids](#query_response_objects_ids) | `array` | Optional | cannot be null | [Query Response](query-1-properties-query_response_objects_ids.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids") |
+| [query\_id](#query_id)                                       | Merged  | Required | cannot be null | [Query Response](query-1-properties-query_id.md "https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_id")                                     |
+| [query\_response\_objects\_ids](#query_response_objects_ids) | `array` | Optional | cannot be null | [Query Response](query-1-properties-query_response_objects_ids.md "https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids") |
 
 ## query\_id
 
@@ -33,7 +33,7 @@ The unique identifier of a query, typically a UUID.
 
 * cannot be null
 
-* defined in: [Query Response](query-1-properties-query_id.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_id")
+* defined in: [Query Response](query-1-properties-query_id.md "https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_id")
 
 ### query\_id Type
 
@@ -57,7 +57,7 @@ Objects returned by the query
 
 * cannot be null
 
-* defined in: [Query Response](query-1-properties-query_response_objects_ids.md "http://github.com/o19s/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids")
+* defined in: [Query Response](query-1-properties-query_response_objects_ids.md "https://o19s.github.io/ubi/schema/query.response.schema.json#/properties/query_response_objects_ids")
 
 ### query\_response\_objects\_ids Type
 

@@ -7,7 +7,7 @@
   "required": [ "query_id" ],
   "properties": {  
     "query_id": {
-      "description": "The unique identifier of a query, typically a UUID.",
+      "description": "The unique identifier of a query, typically a UUID, but can be any string.",
       "oneOf": [
         {
           "type": "string",
@@ -21,7 +21,7 @@
       ]
     },
     "query_response_objects_ids":{
-      "description": "Objects returned by the query",
+      "description": "Objects returned by the query.  Maps to the `object_id` field in a event.",
       "type": "array",
       "items": {
         "anyOf": [
