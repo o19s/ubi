@@ -73,7 +73,6 @@ You also have implementations to validate a JSON file programmatically in almost
 
 > :warning: **The current UBI Schema has been designed using the 2020-12 Specification Draft**: When choosing a validator, please, check if it's compliant with the 2020-12 Draft. You can get much more information about the JSON Schema Specification in [json-schema.org](https://json-schema.org/).
 
-You can check **examples of how to use code to create and validate MAC files** in the [MAC/scripts](https://github.com/getmanfred/mac/tree/master/scripts) directory.
 
 ---
 
@@ -110,7 +109,7 @@ UBI is free and open-source software licensed and distributed under the Creative
 
 ## 🌟 Spread the word!
 
-If you want to say thank you and/or support active development of the MAC:
+If you want to say thank you and/or support active development of UBI:
 
 - Add a GitHub Star to the project!
 - ???
