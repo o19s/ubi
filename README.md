@@ -86,7 +86,7 @@ The Schema is documented by itself, but it's much easier to get "the big picture
 ### 🏫 Learn More
 
 * OpenSearchCon EU - [User Behavior Insights](https://www.youtube.com/watch?v=dH7SPHKpxo0&list=PLzgr9zSpws14zCETcKtCBwcOuTGMccpV9&index=32)
-* Haystack Conf 2024 - Your Search Engine Needs a Memory
+* Haystack Conf 2024 - [Your Search Engine Needs a Memory](https://www.youtube.com/watch?v=QltMXXHcwTI)
 
 ## 🎨 Who uses it
 
