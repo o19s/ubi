@@ -20,7 +20,7 @@
       "oneOf": [
         {
           "type": "string",
-          "enum": ["click_through", "add_to_cart"]
+          "enum": ["click_through", "add_to_cart", "click", "watch", "view", "purchase"]
         },
         {
           "type": "string"
