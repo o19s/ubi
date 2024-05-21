@@ -55,11 +55,13 @@
     },
     "message": {
       "description": "Optional text message for the log entry. For example, for a message_type of QUERY, we would expect the text to be about what the user is searching on.",
-      "type": "string"
+      "type": "string",
+      "maxLength": 1024
     },
     "event_attributes": {
       "description": "Extensible details about a specific event.",
       "type": "object",
+      "additionalProperties": true,
       "properties": {
         "object": {
           "description": "Structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).",
@@ -98,12 +100,7 @@
           "type": "object",
           "additionalProperties": true,
           "$comment": "TBD: Should we define the various flavours of positioning information?"
-        },
-        "properties": {
-          "description": "Structure which contains additional data tracked with the event.",
-          "type": "object",
-          "additionalProperties": true
-        }      
+        }   
       }
     }
   }
