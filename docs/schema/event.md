@@ -21,6 +21,7 @@ An event that occurred, typically in response to a user.  See [schemas.md](https
 | [application](#application)            | `string` | Optional | cannot be null | [Event](event-properties-application.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/application")           |
 | [action\_name](#action_name)           | Merged   | Required | cannot be null | [Event](event-properties-action_name.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/action_name")           |
 | [query\_id](#query_id)                 | Merged   | Required | cannot be null | [Event](event-properties-query_id.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/query_id")                 |
+| [client\_id](#client_id)               | `string` | Optional | cannot be null | [Event](event-properties-client_id.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/client_id")               |
 | [timestamp](#timestamp)                | `string` | Required | cannot be null | [Event](event-properties-timestamp.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/timestamp")               |
 | [message\_type](#message_type)         | `string` | Optional | cannot be null | [Event](event-properties-message_type.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/message_type")         |
 | [message](#message)                    | `string` | Optional | cannot be null | [Event](event-properties-message.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/message")                   |
@@ -105,6 +106,38 @@ one (and only one) of
 * [Untitled string in Event](event-properties-query_id-oneof-0.md "check type definition")
 
 * [Untitled string in Event](event-properties-query_id-oneof-1.md "check type definition")
+
+## client\_id
+
+The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.
+
+`client_id`
+
+* is optional
+
+* Type: `string`
+
+* cannot be null
+
+* defined in: [Event](event-properties-client_id.md "https://o19s.github.io/ubi/schema/event.schema.json#/properties/client_id")
+
+### client\_id Type
+
+`string`
+
+### client\_id Examples
+
+```json
+"5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5"
+```
+
+```json
+"quepid-nightly-bot"
+```
+
+```json
+"BugsBunny::Firefox@0967084"
+```
 
 ## timestamp
 
