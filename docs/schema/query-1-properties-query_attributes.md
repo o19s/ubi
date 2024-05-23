@@ -1,25 +1,25 @@
-# Untitled string in Query Tracking for UBI Schema
+# Untitled object in Query Tracking for UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_id/oneOf/0
+https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_attributes
 ```
 
-
+Any query modifiers like filter choices or pagination. Other attributes such as experiment identifiers that need to be tracked with the query.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.request.schema.json\*](../../out/X.Y.Z/query.request.schema.json "open original schema") |
 
-## 0 Type
+## query\_attributes Type
 
-`string`
+`object` ([Details](query-1-properties-query_attributes.md))
 
-## 0 Constraints
+# query\_attributes Properties
 
-**UUID**: the string must be a UUID, according to [RFC 4122](https://tools.ietf.org/html/rfc4122 "check the specification")
+| Property              | Type | Required | Nullable    | Defined by |
+| :-------------------- | :--- | :------- | :---------- | :--------- |
+| Additional Properties | Any  | Optional | can be null |            |
 
-## 0 Examples
+## Additional Properties
 
-```json
-"00112233-4455-6677-8899-aabbccddeeff"
-```
+Additional properties are allowed and do not have to follow a specific schema
