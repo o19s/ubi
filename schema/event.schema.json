@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://o19s.github.io/ubi/schema/event.schema.json",
-  "title": "Event",
-  "description": "An event that occurred, typically in response to a user.  See [schemas.md](https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md) and [events-mapping.json](https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json) for more info.",
+  "$id": "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json",
+  "title": "Event tracking for UBI",
+  "description": "Version X.Y.Z; last updated 2024-05-23.  An event that occurred, typically in response to a user.  See [schemas.md](https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md) and [events-mapping.json](https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json) for more info.",
   "type": "object",
   "required": ["action_name", "query_id", "timestamp"],
   "properties": {
