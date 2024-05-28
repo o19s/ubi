@@ -8,6 +8,7 @@
     "ubi": "true",
     "query_id": "xyz890",
     "user_query": "RAM memory",
+    "object_id_field": "product_name",
     "query_attributes": {
       "experiment": "supersecret",
       "page": 1,
