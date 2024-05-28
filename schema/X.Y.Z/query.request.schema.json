@@ -19,7 +19,7 @@
           "examples": ["1234-user-5678"]
         }
       ]
-    },
+    }, 
     "user_query":{
       "description": "The query as the user entered it.",
       "type": "string",
