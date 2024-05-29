@@ -19,7 +19,12 @@
           "examples": ["1234-user-5678"]
         }
       ]
-    }, 
+    },
+    "client_id": {
+      "description": "The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.",
+      "type": "string",
+      "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5","quepid-nightly-bot", "BugsBunny::Firefox@0967084"]
+    },
     "user_query":{
       "description": "The query as the user entered it.",
       "type": "string",
