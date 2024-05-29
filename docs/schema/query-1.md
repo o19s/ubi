@@ -66,6 +66,10 @@ The client issuing the query.  This could be a unique browser, a microservice th
 
 `string`
 
+### client\_id Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ### client\_id Examples
 
 ```json
@@ -82,7 +86,7 @@ The client issuing the query.  This could be a unique browser, a microservice th
 
 ## user\_query
 
-The query as the user entered it.
+The query as the user entered it.  No length limit specified.
 
 > Currently not required to support recommendation systems etc that might not have a user generated query.
 
@@ -135,3 +139,7 @@ The name of the field that has the id of the objects that will be stored in the 
 ### object\_id\_field Type
 
 `string`
+
+### object\_id\_field Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`

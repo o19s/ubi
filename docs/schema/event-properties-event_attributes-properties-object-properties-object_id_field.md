@@ -13,3 +13,7 @@ The name of the field that has the id of the objects that will be stored in the 
 ## object\_id\_field Type
 
 `string`
+
+## object\_id\_field Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`

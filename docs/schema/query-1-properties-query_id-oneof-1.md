@@ -14,6 +14,10 @@ https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/qu
 
 `string`
 
+## 1 Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ## 1 Examples
 
 ```json

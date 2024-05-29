@@ -14,6 +14,10 @@ The client issuing the query.  This could be a unique browser, a microservice th
 
 `string`
 
+## client\_id Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ## client\_id Examples
 
 ```json

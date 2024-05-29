@@ -45,6 +45,10 @@ name of the application tracking UBI events.
 
 `string`
 
+### application Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ### application Examples
 
 ```json
@@ -125,6 +129,10 @@ The client issuing the query.  This could be a unique browser, a microservice th
 
 `string`
 
+### client\_id Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ### client\_id Examples
 
 ```json
@@ -186,6 +194,10 @@ Group various `action_name`'s into logical bins.
 ### message\_type Type
 
 `string`
+
+### message\_type Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
 
 ### message\_type Examples
 

@@ -13,3 +13,7 @@ https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attr
 ## 0 Type
 
 `string`
+
+## 0 Constraints
+
+**maximum length**: the maximum number of characters for this string is: `256`

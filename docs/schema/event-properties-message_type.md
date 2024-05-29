@@ -16,6 +16,10 @@ Group various `action_name`'s into logical bins.
 
 `string`
 
+## message\_type Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ## message\_type Examples
 
 ```json

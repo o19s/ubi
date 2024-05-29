@@ -16,6 +16,7 @@
         },
         {
           "type": "string",
+          "maxLength": 100,
           "examples": ["1234-user-5678"]
         }
       ]
