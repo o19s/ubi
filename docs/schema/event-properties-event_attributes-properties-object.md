@@ -16,11 +16,12 @@ Structure which contains identifying information of the object returned from the
 
 # object Properties
 
-| Property                     | Type   | Required | Nullable       | Defined by                                                                                                                                                                                                                                |
-| :--------------------------- | :----- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [object\_id](#object_id)     | Merged | Required | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id")     |
-| [internal\_id](#internal_id) | Merged | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-internal_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id") |
-| Additional Properties        | Any    | Optional | can be null    |                                                                                                                                                                                                                                           |
+| Property                              | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                        |
+| :------------------------------------ | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [object\_id](#object_id)              | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id")             |
+| [object\_id\_field](#object_id_field) | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id_field.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id_field") |
+| [internal\_id](#internal_id)          | Merged   | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-internal_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id")         |
+| Additional Properties                 | Any      | Optional | can be null    |                                                                                                                                                                                                                                                   |
 
 ## object\_id
 
@@ -59,6 +60,24 @@ any of
 ```json
 "123"
 ```
+
+## object\_id\_field
+
+The name of the field that has the id of the objects that will be stored in the backend queries data store. So it you have a query for products and want to save the SKUs, then this might be `sku` and if you are querying for people, maybe this is `ssn`.  If you do not provide this value then the default primary identifier in your search index will be used.  For example `_id` on OpenSearch.
+
+`object_id_field`
+
+* is optional
+
+* Type: `string`
+
+* cannot be null
+
+* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id_field.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id_field")
+
+### object\_id\_field Type
+
+`string`
 
 ## internal\_id
 

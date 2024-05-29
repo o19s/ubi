@@ -18,5 +18,7 @@ generate-schema-doc --config-file jsfh-conf.yaml ./schema ./docs/html
 
 ```
 
+We then check them into Github.
+
 
 https://o19s.github.io/blob/main/docs/html/event.request.schema.html
