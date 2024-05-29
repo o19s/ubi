@@ -26,3 +26,5 @@ https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/action_nam
 | `"watch"`         |             |
 | `"view"`          |             |
 | `"purchase"`      |             |
+
+**maximum length**: the maximum number of characters for this string is: `100`

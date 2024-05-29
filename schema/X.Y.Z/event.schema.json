@@ -9,6 +9,7 @@
     "application": {
       "description": "name of the application tracking UBI events.",
       "type": "string",
+      "maxLength": 100,
       "examples": [
           "amazon-shop",
           "ABC-microservice",
@@ -20,10 +21,12 @@
       "oneOf": [
         {
           "type": "string",
+          "maxLength": 100,
           "enum": ["click_through", "add_to_cart", "click", "watch", "view", "purchase"]
         },
         {
-          "type": "string"
+          "type": "string",
+          "maxLength": 100
         }
       ]
     },
@@ -37,6 +40,7 @@
         },
         {
           "type": "string",
+          "maxLength": 100,
           "examples": ["1234-user-5678"]
         }
       ]
@@ -44,6 +48,7 @@
     "client_id": {
       "description": "The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.",
       "type": "string",
+      "maxLength": 100,
       "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5","quepid-nightly-bot", "BugsBunny::Firefox@0967084"]
     },    
     "timestamp": {
@@ -55,6 +60,7 @@
     "message_type": {
       "description": "Group various `action_name`'s into logical bins.",
       "type": "string",
+      "maxLength": 100,
       "examples": ["QUERY", "CONVERSION"],
       "$comment": "TDB: action_type?  event_type?  Should the front end even define this?"
     },
@@ -80,7 +86,8 @@
               "examples": ["XYZ-12345", "ISBN 0-061-96436-0", "123"],
               "anyOf": [
                 {
-                  "type": "string"
+                  "type": "string",
+                  "maxLength": 256
                 },
                 {
                   "type": "integer"
@@ -89,14 +96,16 @@
             },
             "object_id_field":{
               "description": "The name of the field that has the id of the objects that will be stored in the backend queries data store. So it you have a query for products and want to save the SKUs, then this might be `sku` and if you are querying for people, maybe this is `ssn`.  If you do not provide this value then the default primary identifier in your search index will be used.  For example `_id` on OpenSearch. ",
-              "type": "string"
+              "type": "string",
+              "maxLength": 100
             },
             "internal_id": {
               "description": "A unique id that the an individual search engine uses internally to index the object via.  For example, in OpenSearch, think the `_id` field in the indices.",
               "examples": ["1", "123456"],
               "anyOf": [
                 {
-                  "type": "string"
+                  "type": "string",
+                  "maxLength": 256
                 },
                 {
                   "type": "integer"

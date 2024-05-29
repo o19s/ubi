@@ -4,7 +4,7 @@
 https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/user_query
 ```
 
-The query as the user entered it.
+The query as the user entered it.  No length limit specified.
 
 > Currently not required to support recommendation systems etc that might not have a user generated query.
 

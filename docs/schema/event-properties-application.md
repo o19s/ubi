@@ -14,6 +14,10 @@ name of the application tracking UBI events.
 
 `string`
 
+## application Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ## application Examples
 
 ```json

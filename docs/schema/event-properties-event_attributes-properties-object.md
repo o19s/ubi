@@ -79,6 +79,10 @@ The name of the field that has the id of the objects that will be stored in the 
 
 `string`
 
+### object\_id\_field Constraints
+
+**maximum length**: the maximum number of characters for this string is: `100`
+
 ## internal\_id
 
 A unique id that the an individual search engine uses internally to index the object via.  For example, in OpenSearch, think the `_id` field in the indices.
