@@ -87,6 +87,10 @@
                 }
               ]            
             },
+            "object_id_field":{
+              "description": "The name of the field that has the id of the objects that will be stored in the backend queries data store. So it you have a query for products and want to save the SKUs, then this might be `sku` and if you are querying for people, maybe this is `ssn`.  If you do not provide this value then the default primary identifier in your search index will be used.  For example `_id` on OpenSearch. ",
+              "type": "string"
+            },
             "internal_id": {
               "description": "A unique id that the an individual search engine uses internally to index the object via.  For example, in OpenSearch, think the `_id` field in the indices.",
               "examples": ["1", "123456"],
