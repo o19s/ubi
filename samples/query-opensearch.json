@@ -1,0 +1,18 @@
+{
+  "ext": {
+   "ubi": {
+     "query_id": "12300d16cb-b6f1-4012-93ebcc49cac90426",
+     "user_query": "Toner",
+     "client_id": "c4af7ca2-d6d2-4326-a41f-e616ebdd3d7b",
+     "object_id_field": "product_name",
+     "query_attributes": {
+       "experiment_id": "12345"
+     }
+    }
+   },
+   "query": {
+     "match": {
+       "name": "toner"
+     }
+   }
+ }
