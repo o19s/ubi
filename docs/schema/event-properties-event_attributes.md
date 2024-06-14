@@ -1,14 +1,14 @@
 # Untitled object in Event tracking for UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes
+https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes
 ```
 
 Extensible details about a specific event.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                      |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json\*](../../out/X.Y.Z/event.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json\*](../../out/1.0.0/event.schema.json "open original schema") |
 
 ## event\_attributes Type
 
@@ -18,8 +18,8 @@ Extensible details about a specific event.
 
 | Property              | Type     | Required | Nullable       | Defined by                                                                                                                                                                                      |
 | :-------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [object](#object)     | `object` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object")     |
-| [position](#position) | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-position.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/position") |
+| [object](#object)     | `object` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object")     |
+| [position](#position) | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-position.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/position") |
 | Additional Properties | Any      | Optional | can be null    |                                                                                                                                                                                                 |
 
 ## object
@@ -34,7 +34,7 @@ Structure which contains identifying information of the object returned from the
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object")
+* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object")
 
 ### object Type
 
@@ -52,7 +52,7 @@ Structure that contains information on the location of the event origin, such as
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-position.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/position")
+* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-position.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/position")
 
 ### position Type
 

@@ -1,14 +1,14 @@
 # Untitled undefined type in Query Tracking for UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_id
+https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/query_id
 ```
 
 The unique identifier of a query, typically a UUID, but can be any string.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.request.schema.json\*](../../out/X.Y.Z/query.request.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.request.schema.json\*](../../out/1.0.0/query.request.schema.json "open original schema") |
 
 ## query\_id Type
 

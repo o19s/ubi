@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json",
+  "$id": "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json",
   "title": "Query Tracking for UBI",
-  "description": "Version X.Y.Z; last updated 2024-05-23.  A query made by a user should include these attributes for UBI tracking.",
+  "description": "Version 1.0.0; last updated 2024-06-14.  A query made by a user should include these attributes for UBI tracking.",
   "type": "object",
   "required": [ "user_query" ],
   "properties": {  

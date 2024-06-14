@@ -1,14 +1,14 @@
 # Event tracking for UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json
+https://o19s.github.io/ubi/schema/1.0.0/event.schema.json
 ```
 
-Version X.Y.Z; last updated 2024-05-23.  An event that occurred, typically in response to a user.  See [schemas.md](https://github.com/o19s/opensearch-ubi/blob/2.14.0/documentation/schemas.md) and [events-mapping.json](https://github.com/o19s/opensearch-ubi/blob/2.14.0/src/main/resources/events-mapping.json) for more info.
+Version 1.0.0; last updated 2024-06-14.  An event that occurred, typically in response to a user.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                    |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json](../../out/X.Y.Z/event.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json](../../out/1.0.0/event.schema.json "open original schema") |
 
 ## Event tracking for UBI Type
 
@@ -18,14 +18,14 @@ Version X.Y.Z; last updated 2024-05-23.  An event that occurred, typically in re
 
 | Property                               | Type     | Required | Nullable       | Defined by                                                                                                                                              |
 | :------------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [application](#application)            | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-application.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/application")           |
-| [action\_name](#action_name)           | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-action_name.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/action_name")           |
-| [query\_id](#query_id)                 | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-query_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/query_id")                 |
-| [client\_id](#client_id)               | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-client_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/client_id")               |
-| [timestamp](#timestamp)                | `string` | Required | cannot be null | [Event tracking for UBI](event-properties-timestamp.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/timestamp")               |
-| [message\_type](#message_type)         | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-message_type.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/message_type")         |
-| [message](#message)                    | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-message.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/message")                   |
-| [event\_attributes](#event_attributes) | `object` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes") |
+| [application](#application)            | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-application.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/application")           |
+| [action\_name](#action_name)           | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-action_name.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/action_name")           |
+| [query\_id](#query_id)                 | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-query_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/query_id")                 |
+| [client\_id](#client_id)               | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-client_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/client_id")               |
+| [timestamp](#timestamp)                | `string` | Required | cannot be null | [Event tracking for UBI](event-properties-timestamp.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/timestamp")               |
+| [message\_type](#message_type)         | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-message_type.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/message_type")         |
+| [message](#message)                    | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-message.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/message")                   |
+| [event\_attributes](#event_attributes) | `object` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes") |
 
 ## application
 
@@ -39,7 +39,7 @@ name of the application tracking UBI events.
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-application.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/application")
+* defined in: [Event tracking for UBI](event-properties-application.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/application")
 
 ### application Type
 
@@ -75,7 +75,7 @@ The name of the action that triggered the event.  We have a set of common defaul
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-action_name.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/action_name")
+* defined in: [Event tracking for UBI](event-properties-action_name.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/action_name")
 
 ### action\_name Type
 
@@ -99,7 +99,7 @@ The unique identifier of a query, typically a UUID, but can be any string.
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-query_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/query_id")
+* defined in: [Event tracking for UBI](event-properties-query_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/query_id")
 
 ### query\_id Type
 
@@ -123,7 +123,7 @@ The client issuing the query.  This could be a unique browser, a microservice th
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-client_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/client_id")
+* defined in: [Event tracking for UBI](event-properties-client_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/client_id")
 
 ### client\_id Type
 
@@ -159,7 +159,7 @@ When the event took place.
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-timestamp.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/timestamp")
+* defined in: [Event tracking for UBI](event-properties-timestamp.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/timestamp")
 
 ### timestamp Type
 
@@ -189,7 +189,7 @@ Group various `action_name`'s into logical bins.
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-message_type.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/message_type")
+* defined in: [Event tracking for UBI](event-properties-message_type.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/message_type")
 
 ### message\_type Type
 
@@ -221,7 +221,7 @@ Optional text message for the log entry. For example, for a message\_type of QUE
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-message.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/message")
+* defined in: [Event tracking for UBI](event-properties-message.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/message")
 
 ### message Type
 
@@ -243,7 +243,7 @@ Extensible details about a specific event.
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-event_attributes.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes")
+* defined in: [Event tracking for UBI](event-properties-event_attributes.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes")
 
 ### event\_attributes Type
 

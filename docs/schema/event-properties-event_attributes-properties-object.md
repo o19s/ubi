@@ -1,14 +1,14 @@
 # Untitled object in Event tracking for UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object
+https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object
 ```
 
 Structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                      |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json\*](../../out/X.Y.Z/event.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [event.schema.json\*](../../out/1.0.0/event.schema.json "open original schema") |
 
 ## object Type
 
@@ -18,9 +18,9 @@ Structure which contains identifying information of the object returned from the
 
 | Property                              | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                        |
 | :------------------------------------ | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [object\_id](#object_id)              | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id")             |
-| [object\_id\_field](#object_id_field) | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id_field.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id_field") |
-| [internal\_id](#internal_id)          | Merged   | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-internal_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id")         |
+| [object\_id](#object_id)              | Merged   | Required | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object/properties/object_id")             |
+| [object\_id\_field](#object_id_field) | `string` | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id_field.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object/properties/object_id_field") |
+| [internal\_id](#internal_id)          | Merged   | Optional | cannot be null | [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-internal_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id")         |
 | Additional Properties                 | Any      | Optional | can be null    |                                                                                                                                                                                                                                                   |
 
 ## object\_id
@@ -35,7 +35,7 @@ The id that a user could look up and find the object instance within the *docume
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id")
+* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object/properties/object_id")
 
 ### object\_id Type
 
@@ -73,7 +73,7 @@ The name of the field that has the id of the objects that will be stored in the 
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id_field.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/object_id_field")
+* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-object_id_field.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object/properties/object_id_field")
 
 ### object\_id\_field Type
 
@@ -95,7 +95,7 @@ A unique id that the an individual search engine uses internally to index the ob
 
 * cannot be null
 
-* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-internal_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id")
+* defined in: [Event tracking for UBI](event-properties-event_attributes-properties-object-properties-internal_id.md "https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes/properties/object/properties/internal_id")
 
 ### internal\_id Type
 

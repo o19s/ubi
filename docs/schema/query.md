@@ -1,14 +1,14 @@
 # Query Response When Using UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/query.response.schema.json
+https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json
 ```
 
-Version X.Y.Z; last updated 2024-05-23.  The response to a query made by a user should support this schema.
+Version 1.0.0; last updated 2024-06-14.  The response to a query made by a user should support this schema.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [query.response.schema.json](../../out/X.Y.Z/query.response.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [query.response.schema.json](../../out/1.0.0/query.response.schema.json "open original schema") |
 
 ## Query Response When Using UBI Type
 
@@ -18,7 +18,7 @@ Version X.Y.Z; last updated 2024-05-23.  The response to a query made by a user 
 
 | Property               | Type   | Required | Nullable       | Defined by                                                                                                                                              |
 | :--------------------- | :----- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [query\_id](#query_id) | Merged | Required | cannot be null | [Query Response When Using UBI](query-properties-query_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.response.schema.json#/properties/query_id") |
+| [query\_id](#query_id) | Merged | Required | cannot be null | [Query Response When Using UBI](query-properties-query_id.md "https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json#/properties/query_id") |
 
 ## query\_id
 
@@ -32,7 +32,7 @@ The unique identifier of a query, typically a UUID, but can be any string.
 
 * cannot be null
 
-* defined in: [Query Response When Using UBI](query-properties-query_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.response.schema.json#/properties/query_id")
+* defined in: [Query Response When Using UBI](query-properties-query_id.md "https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json#/properties/query_id")
 
 ### query\_id Type
 

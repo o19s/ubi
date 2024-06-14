@@ -1,14 +1,14 @@
 # Query Tracking for UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json
+https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json
 ```
 
-Version X.Y.Z; last updated 2024-05-23.  A query made by a user should include these attributes for UBI tracking.
+Version 1.0.0; last updated 2024-06-14.  A query made by a user should include these attributes for UBI tracking.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [query.request.schema.json](../../out/X.Y.Z/query.request.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [query.request.schema.json](../../out/1.0.0/query.request.schema.json "open original schema") |
 
 ## Query Tracking for UBI Type
 
@@ -18,11 +18,11 @@ Version X.Y.Z; last updated 2024-05-23.  A query made by a user should include t
 
 | Property                               | Type     | Required | Nullable       | Defined by                                                                                                                                                        |
 | :------------------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [query\_id](#query_id)                 | Merged   | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-query_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_id")                 |
-| [client\_id](#client_id)               | `string` | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-client_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/client_id")               |
-| [user\_query](#user_query)             | `string` | Required | cannot be null | [Query Tracking for UBI](query-1-properties-user_query.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/user_query")             |
-| [query\_attributes](#query_attributes) | `object` | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-query_attributes.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_attributes") |
-| [object\_id\_field](#object_id_field)  | `string` | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-object_id_field.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/object_id_field")   |
+| [query\_id](#query_id)                 | Merged   | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-query_id.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/query_id")                 |
+| [client\_id](#client_id)               | `string` | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-client_id.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/client_id")               |
+| [user\_query](#user_query)             | `string` | Required | cannot be null | [Query Tracking for UBI](query-1-properties-user_query.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/user_query")             |
+| [query\_attributes](#query_attributes) | `object` | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-query_attributes.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/query_attributes") |
+| [object\_id\_field](#object_id_field)  | `string` | Optional | cannot be null | [Query Tracking for UBI](query-1-properties-object_id_field.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/object_id_field")   |
 
 ## query\_id
 
@@ -36,7 +36,7 @@ The unique identifier of a query, typically a UUID, but can be any string.
 
 * cannot be null
 
-* defined in: [Query Tracking for UBI](query-1-properties-query_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_id")
+* defined in: [Query Tracking for UBI](query-1-properties-query_id.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/query_id")
 
 ### query\_id Type
 
@@ -60,7 +60,7 @@ The client issuing the query.  This could be a unique browser, a microservice th
 
 * cannot be null
 
-* defined in: [Query Tracking for UBI](query-1-properties-client_id.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/client_id")
+* defined in: [Query Tracking for UBI](query-1-properties-client_id.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/client_id")
 
 ### client\_id Type
 
@@ -98,7 +98,7 @@ The query as the user entered it.  No length limit specified.
 
 * cannot be null
 
-* defined in: [Query Tracking for UBI](query-1-properties-user_query.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/user_query")
+* defined in: [Query Tracking for UBI](query-1-properties-user_query.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/user_query")
 
 ### user\_query Type
 
@@ -116,7 +116,7 @@ Any query modifiers like filter choices or pagination. Other attributes such as 
 
 * cannot be null
 
-* defined in: [Query Tracking for UBI](query-1-properties-query_attributes.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/query_attributes")
+* defined in: [Query Tracking for UBI](query-1-properties-query_attributes.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/query_attributes")
 
 ### query\_attributes Type
 
@@ -134,7 +134,7 @@ The name of the field that has the id of the objects that will be stored in the 
 
 * cannot be null
 
-* defined in: [Query Tracking for UBI](query-1-properties-object_id_field.md "https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json#/properties/object_id_field")
+* defined in: [Query Tracking for UBI](query-1-properties-object_id_field.md "https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json#/properties/object_id_field")
 
 ### object\_id\_field Type
 

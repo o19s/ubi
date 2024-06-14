@@ -1,14 +1,14 @@
 # Untitled string in Query Response When Using UBI Schema
 
 ```txt
-https://o19s.github.io/ubi/schema/X.Y.Z/query.response.schema.json#/properties/query_id/oneOf/0
+https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json#/properties/query_id/oneOf/0
 ```
 
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.response.schema.json\*](../../out/X.Y.Z/query.response.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [query.response.schema.json\*](../../out/1.0.0/query.response.schema.json "open original schema") |
 
 ## 0 Type
 

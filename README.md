@@ -40,9 +40,9 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 
 | JSON Schema | HTML Docs |
 | --- | --- |
- [query.request.schema.json](https://o19s.github.io/ubi/schema/X.Y.Z/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/query.request.schema.html) |
-| [query.response.schema.json](https://o19s.github.io/ubi/schema/X.Y.Z/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/query.response.schema.html) |
-| [event.schema.json](https://o19s.github.io/ubi/schema/X.Y.Z/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
+ [query.request.schema.json](https://o19s.github.io/ubi/schema/1.0.0/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/query.request.schema.html) |
+| [query.response.schema.json](https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/query.response.schema.html) |
+| [event.schema.json](https://o19s.github.io/ubi/schema/1.0.0/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
 
 To validate 
 You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).  
@@ -61,8 +61,6 @@ To get started, you can copy both schema and sample in an **online validator** l
   }            
 }
 ```
-
-!["JSON Schema"](https://github.com/o19s/ubi/blob/master/assets/readme/MAC_online_validator_example.png?raw=true "JSON Schema")
 
 You also have implementations to validate a JSON file programmatically in almost every [coding language](https://json-schema.org/implementations.html).
 
@@ -107,9 +105,7 @@ UBI is available under the Apache Software License, version 2.
 If you want to say thank you and/or support active development of UBI:
 
 - Add a GitHub Star to the project!
-- ???
-- ?
-
+- Contact Eric at epugh@opensourceconnections.com or Stavros at macrakis@gmail.com
 
 Thanks so much for your interest in growing the reach of UBI!
 
