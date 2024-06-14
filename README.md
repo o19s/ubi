@@ -19,11 +19,6 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
 [Spread the word!](#-spread-the-word)  
 <br />
 <br />
-<br />
-!["JSON Schema"](https://github.com/o19s/ubi/blob/master/assets/readme/schema_screen_capture.png?raw=true "JSON Schema")
-<br />
- <br />
-!["UBI Sample"](https://github.com/o19s/ubi/blob/master/assets/readme/MAC_sample.gif?raw=true "MAC Sample")
   
 </div>  
 
