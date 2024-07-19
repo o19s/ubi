@@ -4,7 +4,7 @@
 https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/client_id
 ```
 
-The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.
+The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot. If only authenticated users are tracked, then you could use a specific user id here, otherwise you should use something permanent and track user id as an *Additional Property*.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                      |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------ |

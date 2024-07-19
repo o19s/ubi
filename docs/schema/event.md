@@ -113,7 +113,7 @@ one (and only one) of
 
 ## client\_id
 
-The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.
+The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot. If only authenticated users are tracked, then you could use a specific user id here, otherwise you should use something permanent and track user id as an *Additional Property*.
 
 `client_id`
 
@@ -233,7 +233,7 @@ Optional text message for the log entry. For example, for a message\_type of QUE
 
 ## event\_attributes
 
-Extensible details about a specific event.
+Extensible details about a specific event. A common example of an  *Additional Properties* is the specific identifier of the user (`user_id`).  Note: a user identifier is different then the required `client_id` attribute.
 
 `event_attributes`
 

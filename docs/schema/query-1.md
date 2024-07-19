@@ -50,7 +50,7 @@ one (and only one) of
 
 ## client\_id
 
-The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.
+The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot. If only authenticated users are tracked, then you could use a specific user id here, otherwise you should use something permanent and track user id as an *Additional Property*.
 
 `client_id`
 

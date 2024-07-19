@@ -4,7 +4,7 @@
 https://o19s.github.io/ubi/schema/1.0.0/event.schema.json#/properties/event_attributes
 ```
 
-Extensible details about a specific event.
+Extensible details about a specific event. A common example of an  *Additional Properties* is the specific identifier of the user (`user_id`).  Note: a user identifier is different then the required `client_id` attribute.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                      |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------ |
