@@ -99,9 +99,11 @@ We often want to track a specific identifer for a user, but then realize that we
 }
 ```
 
+In post processing, you can use the Client ID field to connect queries and events from the anonymous user to queries and events after they are logged in, and pluck the explicit user id from the detailed event_attributes information.
+
 #### Where do I record my user id and item id?
 
-Blah
+If your user identification is stable, then feel free to use the [Query Request --> Client ID](https://o19s.github.io/ubi/docs/html/query.request.schema.html#client_id) and [Event --> Client ID](https://o19s.github.io/ubi/docs/html/event.schema.html#client_id).  Otherwise, see the above FAQ entry for how to handle it.  The item ID is tracked for an event in the [Event --> Object](https://o19s.github.io/ubi/docs/html/event.schema.html#event_attributes_object) datastructure.
 
 
 
