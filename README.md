@@ -12,6 +12,7 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
  
 [Why use it](#-why-use-it) •
 [How to use it](#-how-to-use-it) •
+[FAQ](#-frequently-asked-questions) •
 [Who uses it](#-who-uses-it) •
 [Who we are](#-who-we-are) •
 [How to contribute](#%EF%B8%8F-how-to-contribute) •
@@ -44,7 +45,6 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 | [query.response.schema.json](https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/query.response.schema.html) |
 | [event.schema.json](https://o19s.github.io/ubi/schema/1.0.0/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
 
-To validate 
 You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).  
 
 To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator).  Make sure to just copy the UBI related portions, and not any of the search engine specific code.  Here is the UBI portion from the file [query-solr.json](https://github.com/o19s/ubi/blob/master/samples/query-solr.json) for example:
@@ -75,6 +75,37 @@ The Schema is documented by itself, but it's much easier to get "the big picture
   <img src='https://github.com/o19s/ubi/blob/main/assets/readme/UBI_diagram.png?raw=true' width='600px' alt="UBI Diagram">
  </div>
 <br />
+
+
+## 🤔 Frequently Asked Questions
+
+#### How do I handle anonymous users?
+We often want to track a specific identifer for a user, but then realize that we also want to connect those events to previously unauthenticated events.  Therefore, we can't just plop in a explicit user id as the `client_id` attribute.  Instead, you want to track something that is permanent, across the anonymous AND logged in session as the `client_id`.  To make processing simpler you can store the explicit user identifier in the Event --> Event Attributes --> Additional Properties hash.  Here is an example of user "abc" who clicked on item with sku "1234":
+
+```json
+{
+  "action_name": "item_click",
+  "query_id": "00112233-4455-6677-8899-aabbccddeeff",
+  "message_type": "INFO",
+  "message": "User abc clicked sku 1234",
+  "event_attributes": {
+    "position":{},
+    "object": {
+      "object_id":"1234"
+      "object_id_field": "sku",
+      "user_id":"abc"
+    }
+  }
+}
+```
+
+#### Where do I record my user id and item id?
+
+Blah
+
+
+
+
 
 ### 🏫 Learn More
 
