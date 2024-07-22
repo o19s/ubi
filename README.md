@@ -12,6 +12,7 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
  
 [Why use it](#-why-use-it) •
 [How to use it](#-how-to-use-it) •
+[FAQ](#-frequently-asked-questions) •
 [Who uses it](#-who-uses-it) •
 [Who we are](#-who-we-are) •
 [How to contribute](#%EF%B8%8F-how-to-contribute) •
@@ -24,11 +25,11 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
 
 ## 🥘 Why use it
 
-Many Search teams struggle with understanding "Why is my user doing this".  They have great understanding of an incoming query and the documents returned, but no ability to connect that dot with an indicator of success, such as a click through event or event a add to cart.
+Many Search teams struggle with understanding "Why is my user doing this". They have great understanding of an incoming query and the documents returned, but no ability to connect that dot with an indicator of success, such as a click through event or add to cart event.
 
-There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in.  None of them think about the needs of Search teams specifically either.
+There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in. None of them think about the needs of Search teams specifically either.
 
-The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms.  There are implementations for
+The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms. There are implementations for
  * [OpenSearch](https://github.com/o19s/documentation-website/tree/ubi-docs-consolidation/_search-plugins/ubi)
  * [Apache Solr](https://github.com/apache/solr/pull/2452)
 
@@ -36,7 +37,7 @@ The User Behavior Insights standard attempts to provide a search focused standar
 ## 🪛 How to use it
 
  
-UBI requires coordination between the client (a browser, a mobile app, etc) and the backend, which is documented using JSON Schema.  
+UBI requires coordination between the client (a browser, a mobile app, etc) and the backend, which is documented using JSON Schema.
 
 | JSON Schema | HTML Docs |
 | --- | --- |
@@ -44,10 +45,9 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 | [query.response.schema.json](https://o19s.github.io/ubi/schema/1.0.0/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/query.response.schema.html) |
 | [event.schema.json](https://o19s.github.io/ubi/schema/1.0.0/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/event.schema.html) |
 
-To validate 
-You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).  
+You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).
 
-To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator).  Make sure to just copy the UBI related portions, and not any of the search engine specific code.  Here is the UBI portion from the file [query-solr.json](https://github.com/o19s/ubi/blob/master/samples/query-solr.json) for example:
+To get started, you can copy both schema and sample in an **online validator** like [jsonschemavalidator.net](https://www.jsonschemavalidator.net/) or [liquid-technologies.com/online-json-schema-validator](https://www.liquid-technologies.com/online-json-schema-validator). Make sure to just copy the UBI related portions, and not any of the search engine specific code. Here is the UBI portion from the file [query-solr.json](https://github.com/o19s/ubi/blob/master/samples/query-solr.json) for example:
 
 ```json
 {
@@ -75,6 +75,39 @@ The Schema is documented by itself, but it's much easier to get "the big picture
   <img src='https://github.com/o19s/ubi/blob/main/assets/readme/UBI_diagram.png?raw=true' width='600px' alt="UBI Diagram">
  </div>
 <br />
+
+
+## 🤔 Frequently Asked Questions
+
+#### How do I handle anonymous users?
+We often want to track a specific identifer for a user, but then realize that we also want to connect those events to previously unauthenticated events. Therefore, we can't just plop in a explicit user id as the `client_id` attribute. Instead, you want to track something that is permanent, across the anonymous AND logged in session as the `client_id`. To make processing simpler you can store the explicit user identifier in the [Event --> Event Attributes --> Additional Properties](https://o19s.github.io/ubi/docs/html/event.schema.html#event_attributes_additionalProperties) hash. Here is an example of user "abc" who clicked on item with sku "1234":
+
+```json
+{
+  "action_name": "item_click",
+  "query_id": "00112233-4455-6677-8899-aabbccddeeff",
+  "message_type": "INFO",
+  "message": "User abc clicked sku 1234",
+  "event_attributes": {
+    "position":{},
+    "object": {
+      "object_id":"1234"
+      "object_id_field": "sku",
+      "user_id":"abc"
+    }
+  }
+}
+```
+
+In post processing, you can use the Client ID field to connect queries and events from the anonymous user to queries and events after they are logged in, and pluck the explicit user id from the detailed event_attributes information.
+
+#### Where do I record my user id and item id?
+
+If your user identification is stable, then feel free to use the [Query Request --> Client ID](https://o19s.github.io/ubi/docs/html/query.request.schema.html#client_id) and [Event --> Client ID](https://o19s.github.io/ubi/docs/html/event.schema.html#client_id).  Otherwise, see the above FAQ entry for how to handle it.  The item ID is tracked for an event in the [Event --> Object](https://o19s.github.io/ubi/docs/html/event.schema.html#event_attributes_object) datastructure.
+
+
+
+
 
 ### 🏫 Learn More
 
@@ -109,4 +142,4 @@ If you want to say thank you and/or support active development of UBI:
 
 Thanks so much for your interest in growing the reach of UBI!
 
-_This site was inspired by https://github.com/getmanfred/mac.  Thank you!_
+_This site was inspired by https://github.com/getmanfred/mac. Thank you!_
