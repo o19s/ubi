@@ -51,6 +51,12 @@
       "maxLength": 100,
       "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5","quepid-nightly-bot", "BugsBunny::Firefox@0967084"]
     },    
+    "user_id": {
+      "description": "The user ID associated with the person performing the interactions being logged on the site. Can be null/empty in case of an unauthenticated user.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5"]
+    },
     "timestamp": {
       "description": "When the event took place.",
       "type": "string",
