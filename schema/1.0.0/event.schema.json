@@ -4,7 +4,7 @@
   "title": "Event tracking for UBI",
   "description": "Version 1.0.0; last updated 2024-06-14.  An event that occurred, typically in response to a user.",
   "type": "object",
-  "required": ["action_name", "query_id", "timestamp"],
+  "required": ["action_name", "query_id", "session_id", "timestamp"],
   "properties": {
     "application": {
       "description": "name of the application tracking UBI events.",
@@ -44,6 +44,12 @@
           "examples": ["1234-user-5678"]
         }
       ]
+    },
+    "session_id": {
+      "description": "The session of the user creating the interactions. This allows us to correlate the interactions with the other events created by a service that recognizes session IDs. Can be used to track unique visits for authenticated and anonymous users.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["84266fdbd31d4c2c6d0665f7e8380fa3"]
     },
     "client_id": {
       "description": "The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot. If only authenticated users are tracked, then you could use a specific user id here, otherwise you should use something permanent and track user id as an _Additional Property_.",
