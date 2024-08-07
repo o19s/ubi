@@ -4,7 +4,7 @@
   "title": "Event tracking for UBI",
   "description": "Version 1.0.0; last updated 2024-06-14.  An event that occurred, typically in response to a user.",
   "type": "object",
-  "required": ["action_name", "query_id", "timestamp"],
+  "required": ["action_name", "timestamp"],
   "properties": {
     "application": {
       "description": "name of the application tracking UBI events.",
