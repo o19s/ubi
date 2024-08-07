@@ -94,6 +94,20 @@
                 }
               ]            
             },
+            "object_id_type": {
+              "description": "The type of the object id that the user is searching for. For a social e-commerce site, these could include product, user, post, comment and so on.",
+              "oneOf": [
+                {
+                  "type": "string",
+                  "maxLength": 100,
+                  "enum": ["product", "user", "post", "comment", "video"]
+                },
+                {
+                  "type": "string",
+                  "maxLength": 100
+                }
+              ]
+            },
             "object_id_field":{
               "description": "The name of the field that has the id of the objects that will be stored in the backend queries data store. So it you have a query for products and want to save the SKUs, then this might be `sku` and if you are querying for people, maybe this is `ssn`.  If you do not provide this value then the default primary identifier in your search index will be used.  For example `_id` on OpenSearch. ",
               "type": "string",
