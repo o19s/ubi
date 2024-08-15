@@ -130,6 +130,8 @@ sequenceDiagram
 ```
 
 Another common reason is to have rich events, but reduce the volume of data passed over the wire to the client.
+
+We sometimes refer to this shortcut architecture as "the Panama Canal", as in taking an extreme shortcut!
  
 
 
