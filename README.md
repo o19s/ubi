@@ -105,8 +105,32 @@ In post processing, you can use the Client ID field to connect queries and event
 
 If your user identification is stable, then feel free to use the [Query Request --> Client ID](https://o19s.github.io/ubi/docs/html/query.request.schema.html#client_id) and [Event --> Client ID](https://o19s.github.io/ubi/docs/html/event.schema.html#client_id).  Otherwise, see the above FAQ entry for how to handle it.  The item ID is tracked for an event in the [Event --> Object](https://o19s.github.io/ubi/docs/html/event.schema.html#event_attributes_object) datastructure.
 
+#### How can I correlate sensitive data?
 
+We often have sensitive data that is returned as part of the search process that changes quickly, and we would not want to expose to the front end.
 
+For example, in ecommerce, we might want to track the margin that is earned on a product, but not pass that data back to the browser, just to collect it later int he events.
+
+To do that, we introduce a cache into our architecture for this sensitive data:
+
+```mermaid
+sequenceDiagram
+    actor Alice
+    Alice ->> Browser: "I want a mobile phone"
+    Browser ->> API: "{user_search_query:mobile phone}"
+    API ->> SearchEngine: "q=mobile phone"
+    SearchEngine ->> UBI_db: Store queryId and SKUs of phones returned to user
+    SearchEngine->>API: Return QueryId and list of mobile phones by SKU with price and profit margin
+    API ->> Cache: Store Margins per Phone under QueryId and SKU
+    API->> Browser: QueryID and list of mobile phones by SKU with price
+    Alice->> Browser: "Click iPhone 15 Pro"
+    Browser->> API: Click Event with SKU and QueryId
+    API->> Cache: Look up Margin based on QueryId and SKU
+    API->> UBI_db: Store queryId and SKU and Margin
+```
+
+Another common reason is to have rich events, but reduce the volume of data passed over the wire to the client.
+ 
 
 
 ### 🏫 Learn More
