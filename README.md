@@ -105,11 +105,11 @@ In post processing, you can use the Client ID field to connect queries and event
 
 If your user identification is stable, then feel free to use the [Query Request --> Client ID](https://o19s.github.io/ubi/docs/html/query.request.schema.html#client_id) and [Event --> Client ID](https://o19s.github.io/ubi/docs/html/event.schema.html#client_id).  Otherwise, see the above FAQ entry for how to handle it.  The item ID is tracked for an event in the [Event --> Object](https://o19s.github.io/ubi/docs/html/event.schema.html#event_attributes_object) datastructure.
 
-#### How can I correlate sensitive data?
+#### How can I correlate private sensitive data with public event tracking?
 
-We often have sensitive data that is returned as part of the search process that changes quickly, and we would not want to expose to the front end.
+We often have sensitive data that is returned as part of the search process that changes quickly, and we would not want to expose that information in front end, even hidden!
 
-For example, in ecommerce, we might want to track the margin that is earned on a product, but not pass that data back to the browser, just to collect it later int he events.
+For example, in ecommerce, we might want to track the margin that is earned on a product, but not pass that data back to the browser, just to collect it later in the events.
 
 To do that, we introduce a cache into our architecture for this sensitive data:
 
