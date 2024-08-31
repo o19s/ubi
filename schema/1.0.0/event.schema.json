@@ -22,7 +22,7 @@
         {
           "type": "string",
           "maxLength": 100,
-          "enum": ["click_through", "add_to_cart", "click", "watch", "view", "purchase"]
+          "enum": ["click_through", "add_to_cart", "click", "watch", "view", "purchase", "impression"]
         },
         {
           "type": "string",
