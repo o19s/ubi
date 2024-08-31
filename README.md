@@ -4,8 +4,8 @@
 
 UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standard open source format to define and share user event tracking information**. The format is defined as a JSON Schema to validate queries and events defined as JSON objects.
  
- <a href='https://github.com/o19s/ubi/releases'>
-  <img src='https://img.shields.io/github/v/release/o19s/ubi?color=%23FDD835&label=version&style=for-the-badge&logo=JSON' alt="Version Badge">
+<a href='https://github.com/o19s/ubi/releases'>
+  <img alt="Version Badge" src="https://img.shields.io/github/v/release/o19s/ubi">
 </a>
 <br />
 <br />
