@@ -7,10 +7,12 @@
   "required": ["action_name", "timestamp"],
   "properties": {
     "application": {
-      "description": "name of the application tracking UBI events.",
+      "description": "Name of the application that is integrated with UBI.  You can think of application as in a source of search queries.  For example, if you have a type ahead and a traditional search UI, then you might have `type-ahead` and `primary-search` as values.",
       "type": "string",
       "maxLength": 100,
       "examples": [
+          "type-ahead",
+          "primary-search",
           "amazon-shop",
           "ABC-microservice",
           "doctor-search"
