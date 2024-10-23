@@ -64,7 +64,7 @@
       "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5"]
     },
     "timestamp": {
-      "description": "When the event took place.",
+      "description": "When the event took place.  This timestamp is formatted according to the ISO 8601 standard.",
       "type": "string",
       "format": "date-time",
       "examples": ["2018-11-13T20:20:39+00:00"]
