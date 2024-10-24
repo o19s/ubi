@@ -30,8 +30,9 @@ Many Search teams struggle with understanding "Why is my user doing this". They 
 There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in. None of them think about the needs of Search teams specifically either.
 
 The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms. There are implementations for
- * [OpenSearch](https://github.com/o19s/documentation-website/tree/ubi-docs-consolidation/_search-plugins/ubi)
+ * [OpenSearch](https://opensearch.org/docs/latest/search-plugins/ubi)
  * [Apache Solr](https://github.com/apache/solr/pull/2452)
+ * [Elasticsearch](https://github.com/o19s/user-behavior-insights-elasticsearch)
 
 
 ## 🪛 How to use it
@@ -41,9 +42,9 @@ UBI requires coordination between the client (a browser, a mobile app, etc) and 
 
 | JSON Schema | HTML Docs |
 | --- | --- |
- [query.request.schema.json](https://o19s.github.io/ubi/schema/1.1.0/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/1.1.0/query.request.schema.html) |
-| [query.response.schema.json](https://o19s.github.io/ubi/schema/1.1.0/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/1.1.0/query.response.schema.html) |
-| [event.schema.json](https://o19s.github.io/ubi/schema/1.1.0/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/1.1.0/event.schema.html) |
+ [query.request.schema.json](https://o19s.github.io/ubi/schema/1.2.0/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/1.2.0/query.request.schema.html) |
+| [query.response.schema.json](https://o19s.github.io/ubi/schema/1.2.0/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/1.2.0/query.response.schema.html) |
+| [event.schema.json](https://o19s.github.io/ubi/schema/1.2.0/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/1.2.0/event.schema.html) |
 
 You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).
 
