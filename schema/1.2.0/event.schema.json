@@ -1,16 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://o19s.github.io/ubi/schema/1.1.0/event.schema.json",
+  "$id": "https://o19s.github.io/ubi/schema/1.2.0/event.schema.json",
   "title": "Event tracking for UBI",
-  "description": "Version 1.1.0; last updated 2024-08-31.  An event that occurred, typically in response to a user.",
+  "description": "Version 1.2.0; last updated 2024-???.  An event that occurred, typically in response to a user.",
   "type": "object",
   "required": ["action_name", "timestamp"],
   "properties": {
     "application": {
-      "description": "name of the application tracking UBI events.",
+      "description": "Name of the application that is integrated with UBI.  You can think of application as in a source of search queries.  For example, if you have a type ahead and a traditional search UI, then you might have `type-ahead` and `primary-search` as values.",
       "type": "string",
       "maxLength": 100,
       "examples": [
+          "type-ahead",
+          "primary-search",
           "amazon-shop",
           "ABC-microservice",
           "doctor-search"
