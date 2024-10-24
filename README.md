@@ -30,8 +30,9 @@ Many Search teams struggle with understanding "Why is my user doing this". They 
 There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in. None of them think about the needs of Search teams specifically either.
 
 The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms. There are implementations for
- * [OpenSearch](https://github.com/o19s/documentation-website/tree/ubi-docs-consolidation/_search-plugins/ubi)
+ * [OpenSearch](https://opensearch.org/docs/latest/search-plugins/ubi)
  * [Apache Solr](https://github.com/apache/solr/pull/2452)
+ * [Elasticsearch](https://github.com/o19s/user-behavior-insights-elasticsearch)
 
 
 ## 🪛 How to use it
