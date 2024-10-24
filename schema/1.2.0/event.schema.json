@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://o19s.github.io/ubi/schema/1.2.0/event.schema.json",
   "title": "Event tracking for UBI",
-  "description": "Version 1.2.0; last updated 2024-???.  An event that occurred, typically in response to a user.",
+  "description": "Version 1.2.0; last updated 2024-10-24.  An event that occurred, typically in response to a user.",
   "type": "object",
   "required": ["action_name", "timestamp"],
   "properties": {
