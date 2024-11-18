@@ -66,10 +66,10 @@
       "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5"]
     },
     "timestamp": {
-      "description": "When the event took place.  This timestamp is formatted according to the ISO 8601 standard.",
+      "description": "When the event took place.  This timestamp is formatted according to the ISO 8601 standard. _Please note that Opensearch requires a trailing `Z` or explicit timezone offset._",
       "type": "string",
       "format": "date-time",
-      "examples": ["2018-11-13T20:20:39+00:00"]
+      "examples": ["2018-11-13T20:20:39+00:00", "2018-11-13T20:20:39Z", "2018-11-13T20:20:39"]
     },
     "message_type": {
       "description": "Group various `action_name`'s into logical bins.",
