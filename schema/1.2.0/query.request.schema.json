@@ -55,10 +55,10 @@
       "maxLength": 100
     },
     "timestamp": {
-      "description": "When the query was issued.  This timestamp is formatted according to the ISO 8601 standard.  In many implementations of the UBI Query plugin the timestamp will be set for you at the time of the query being run.  If you are replaying data, or want to track the timezone of the caller specifically, instead of using the search engine's timezone, then you will need to provide the timestamp instead.",
+      "description": "When the query was issued.  This timestamp is formatted according to the ISO 8601 standard.  In many implementations of the UBI Query plugin the timestamp will be set for you at the time of the query being run.  If you are replaying data, or want to track the timezone of the caller specifically, instead of using the search engine's timezone, then you will need to provide the timestamp instead. _Please note that Opensearch requires a trailing `Z` or explicit timezone offset._",
       "type": "string",
       "format": "date-time",
-      "examples": ["2018-11-13T20:20:39+00:00"]
+      "examples": ["2018-11-13T20:20:39+00:00", "2018-11-13T20:20:39Z", "2018-11-13T20:20:39"]
     }
   }
 }
