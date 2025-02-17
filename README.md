@@ -27,7 +27,7 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
 
 Many Search teams struggle with understanding "Why is my user doing this". They have great understanding of an incoming query and the documents returned, but no ability to connect that dot with an indicator of success, such as a click through event or add to cart event.
 
-There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in. None of them think about the needs of Search teams specifically either.
+There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in. None of them address the specific unique needs of Search teams.
 
 The User Behavior Insights standard attempts to provide a search focused standard that can operate across many platforms. There are implementations for
  * [OpenSearch](https://opensearch.org/docs/latest/search-plugins/ubi)
