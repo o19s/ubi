@@ -20,18 +20,9 @@
     },    
     "query_id": {
       "description": "The unique identifier of a query, typically a UUID, but can be any string.",
-      "oneOf": [
-        {
-          "type": "string",
-          "format": "uuid",
-          "examples": ["00112233-4455-6677-8899-aabbccddeeff"]
-        },
-        {
-          "type": "string",
-          "maxLength": 100,
-          "examples": ["1234-user-5678"]
-        }
-      ]
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["00112233-4455-6677-8899-aabbccddeeff", "1234-user-5678"]
     },   
     "client_id": {
       "description": "The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot. If only authenticated users are tracked, then you could use a specific user id here, otherwise you should use something permanent and track user id as an _Additional Property_.",
