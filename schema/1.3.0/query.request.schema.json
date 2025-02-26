@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://o19s.github.io/ubi/schema/1.2.0/query.request.schema.json",
+  "title": "Query Tracking for UBI",
+  "description": "Version 1.2.0; last updated 2024-10-24.  A query made by a user should include these attributes for UBI tracking.",
+  "type": "object",
+  "required": [ "user_query" ],
+  "properties": {  
+    "application": {
+      "description": "Name of the application that is integrated with UBI.  You can think of application as in a source of search queries.  For example, if you have a type ahead and a traditional search UI, then you might have `type-ahead` and `primary-search` as values.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": [
+          "type-ahead",
+          "primary-search",
+          "amazon-shop",
+          "ABC-microservice",
+          "doctor-search"
+      ]
+    },    
+    "query_id": {
+      "description": "The unique identifier of a query, typically a UUID, but can be any string.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uuid",
+          "examples": ["00112233-4455-6677-8899-aabbccddeeff"]
+        },
+        {
+          "type": "string",
+          "maxLength": 100,
+          "examples": ["1234-user-5678"]
+        }
+      ]
+    },   
+    "client_id": {
+      "description": "The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot. If only authenticated users are tracked, then you could use a specific user id here, otherwise you should use something permanent and track user id as an _Additional Property_.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5","quepid-nightly-bot", "BugsBunny::Firefox@0967084"]
+    },
+    "user_query":{
+      "description": "The query as the user entered it.  No length limit specified.",
+      "type": "string",
+      "$comment": "Currently not required to support recommendation systems etc that might not have a user generated query."
+    },
+    "query_attributes":{
+      "description": "Any query modifiers like filter choices or pagination. Other attributes such as experiment identifiers that need to be tracked with the query.",
+      "type": "object",
+      "additionalProperties": true
+    },
+    "object_id_field":{
+      "description": "The name of the field that has the id of the objects that will be stored in the backend queries data store. So it you have a query for products and want to save the SKUs, then this might be `sku` and if you are querying for people, maybe this is `ssn`.  If you do not provide this value then the default primary identifier in your search index will be used.  For example `_id` on OpenSearch. ",
+      "type": "string",
+      "maxLength": 100
+    },
+    "timestamp": {
+      "description": "When the query was issued.  This timestamp is formatted according to the ISO 8601 standard.  In many implementations of the UBI Query plugin the timestamp will be set for you at the time of the query being run.  If you are replaying data, or want to track the timezone of the caller specifically, instead of using the search engine's timezone, then you will need to provide the timestamp instead. _Please note that Opensearch requires a trailing `Z` or explicit timezone offset._",
+      "type": "string",
+      "format": "date-time",
+      "examples": ["2018-11-13T20:20:39+00:00", "2018-11-13T20:20:39Z", "2018-11-13T20:20:39"]
+    }
+  }
+}
