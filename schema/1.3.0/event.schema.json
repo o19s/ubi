@@ -151,16 +151,9 @@
                     "type": "object",
                     "properties": {
                       "ordinal": {
-                        "description": "The nth position of the document on the search results page.",
-                        "type": "object",
-                        "properties": {
-                          "index": {
-                            "description": "The position of the document.  For grid layout this would be left to right, ignoring wrapping.",
-                            "type": "integer",
-                            "examples": [1, 3, 24]
-                          }
-                        },
-                        "required": ["index"]
+                        "description": "The nth position of the document on the search results page. For grid layout this would be left to right, ignoring wrapping.",
+                        "type": "integer",
+                        "examples": [1, 3, 24]
                       }
                     },
                     "required": ["ordinal"]
