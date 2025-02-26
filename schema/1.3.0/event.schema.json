@@ -83,6 +83,11 @@
       "type": "string",
       "maxLength": 1024
     },
+    "user_query":{
+      "description": "The query as the user entered it.  No length limit specified.",
+      "type": "string",
+      "$comment": "Currently not required to support recommendation systems etc that might not have a user generated query."
+    },
     "event_attributes": {
       "description": "Extensible details about a specific event. A common example of an  _Additional Properties_ is the specific identifier of the user (`user_id`).  Note: a user identifier is different then the required `client_id` attribute.",
       "type": "object",
