@@ -1,7 +1,7 @@
 
 #### To generate the docs:
 
-We use the Pythong library `json-schema-for-humans` to generate HTML docs based on the JSON schema files.
+We use the Python library `json-schema-for-humans` to generate HTML docs based on the JSON schema files.
 
 You need Python to generate the HTML docs. The best way is to use a virtual environment.
 
