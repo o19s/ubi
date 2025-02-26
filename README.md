@@ -3,13 +3,13 @@
 # User Behavior Insights
 
 UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standard open source format to define and share user event tracking information**. The format is defined as a JSON Schema to validate queries and events defined as JSON objects.
- 
+
 <a href='https://github.com/o19s/ubi/releases'>
   <img alt="Version Badge" src="https://img.shields.io/github/v/release/o19s/ubi">
 </a>
 <br />
 <br />
- 
+
 [Why use it](#-why-use-it) •
 [How to use it](#-how-to-use-it) •
 [FAQ](#-frequently-asked-questions) •
@@ -20,7 +20,7 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
 [Spread the word!](#-spread-the-word)  
 <br />
 <br />
-  
+
 </div>  
 
 ## 🥘 Why use it
@@ -37,14 +37,14 @@ The User Behavior Insights standard attempts to provide a search focused standar
 
 ## 🪛 How to use it
 
- 
+
 UBI requires coordination between the client (a browser, a mobile app, etc) and the backend, which is documented using JSON Schema.
 
 | JSON Schema | HTML Docs |
 | --- | --- |
- [query.request.schema.json](https://o19s.github.io/ubi/schema/1.3.0/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/1.3.0/query.request.schema.html) |
-| [query.response.schema.json](https://o19s.github.io/ubi/schema/1.3.0/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/1.3.0/query.response.schema.html) |
-| [event.schema.json](https://o19s.github.io/ubi/schema/1.3.0/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/1.3.0/event.schema.html) |
+ [query.request.schema.json](https://o19s.github.io/ubi/schema/latest/query.request.schema.json) | [query.request.schema.html](https://o19s.github.io/ubi/docs/html/latest/query.request.schema.html) |
+| [query.response.schema.json](https://o19s.github.io/ubi/schema/latest/query.response.schema.json) | [query.response.schema.html](https://o19s.github.io/ubi/docs/html/latestquery.response.schema.html) |
+| [event.schema.json](https://o19s.github.io/ubi/schema/latest/event.schema.json) | [event.schema.html](https://o19s.github.io/ubi/docs/html/latest/event.schema.html) |
 
 You just need to copy, download or reference one of the schema files to validate a UBI data structure, built as a JSON file from scratch, or a JSON generated previously (for example, [these samples](https://github.com/o19s/ubi/blob/master/samples/)).
 
@@ -133,7 +133,7 @@ sequenceDiagram
 Another common reason is to have rich events, but reduce the volume of data passed over the wire to the client.
 
 We sometimes refer to this shortcut architecture as "the Panama Canal", as in taking an extreme shortcut!
- 
+
 
 
 ### 🏫 Learn More
