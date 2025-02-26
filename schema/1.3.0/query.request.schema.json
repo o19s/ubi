@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://o19s.github.io/ubi/schema/1.2.0/query.request.schema.json",
+  "$id": "https://o19s.github.io/ubi/schema/1.3.0/query.request.schema.json",
   "title": "Query Tracking for UBI",
-  "description": "Version 1.2.0; last updated 2024-10-24.  A query made by a user should include these attributes for UBI tracking.",
+  "description": "Version 1.3.0; last updated 2025-02-26.  A query made by a user should include these attributes for UBI tracking.",
   "type": "object",
   "required": [ "user_query" ],
   "properties": {  
@@ -59,6 +59,19 @@
       "type": "string",
       "format": "date-time",
       "examples": ["2018-11-13T20:20:39+00:00", "2018-11-13T20:20:39Z", "2018-11-13T20:20:39"]
+    },
+    "query_response_id": {
+      "description": "The id of the search engine response.",
+      "type": "string",
+      "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5", "00112233-4455-6677-8899-aabbccddeeff"]
+    },
+    "query_response_hit_ids": {
+      "description": "The ids of the documents that were returned by the search engine for this query in the order they were returned.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "examples": [["B07XLFYN6S", "B013UFPODY", "B07SHS91DQ", "B077FVRM4P", "B07ZCRSVBB", "B07H7RWGRY", "B085XP9ZY5", "B01LW2UNZQ", "B01MQVMFUN", "B08KFPPJ3Y", "B08THXDPVM", "B07V2GZSMS", "B0828XP9RM", "B07G96L41J", "B07V224V9X", "B095LHL2G5", "B083W38C8H", "B06XWPHG53", "B07J4WHNFC", "B071HMM81V"], ["1","2","3","4","5"], []]
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://o19s.github.io/ubi/schema/1.2.0/query.response.schema.json",
+  "$id": "https://o19s.github.io/ubi/schema/1.3.0/query.response.schema.json",
   "title": "Query Response When Using UBI",
-  "description": "Version 1.2.0; last updated 2024-10-24.  The response to a query made by a user should support this schema.",
+  "description": "Version 1.3.0; last updated 2025-02-26.  The response to a query made by a user should support this schema.",
   "type": "object",
   "required": [ "query_id" ],
   "properties": {  
