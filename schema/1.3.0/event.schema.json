@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://o19s.github.io/ubi/schema/1.3.0/event.schema.json",
+  "title": "Event tracking for UBI",
+  "description": "Version 1.3.0; last updated 2025-02-26.  An event that occurred, typically in response to a user.",
+  "type": "object",
+  "required": ["action_name", "timestamp"],
+  "properties": {
+    "application": {
+      "description": "Name of the application that is integrated with UBI.  You can think of application as in a source of search queries.  For example, if you have a type ahead and a traditional search UI, then you might have `type-ahead` and `primary-search` as values.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": [
+          "type-ahead",
+          "primary-search",
+          "amazon-shop",
+          "ABC-microservice",
+          "doctor-search"
+      ]
+    },
+    "action_name": {
+      "description": "The name of the action that triggered the event.  We have a set of common defaults, however you can pass in whatever you want.",
+      "oneOf": [
+        {
+          "type": "string",
+          "maxLength": 100,
+          "enum": ["add_to_cart", "click", "watch", "view", "purchase", "impression"]
+        },
+        {
+          "type": "string",
+          "maxLength": 100
+        }
+      ]
+    },
+    "query_id": {
+      "description": "The unique identifier of a query, typically a UUID, but can be any string.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["00112233-4455-6677-8899-aabbccddeeff", "1234-user-5678"]
+    },
+    "session_id": {
+      "description": "The session of the user creating the interactions. This allows us to correlate the interactions with the other events created by a service that recognizes session IDs. Can be used to track unique visits for authenticated and anonymous users.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["84266fdbd31d4c2c6d0665f7e8380fa3"]
+    },
+    "client_id": {
+      "description": "The client issuing the query.  This could be a unique browser, a microservice that performs searches, a crawling bot.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5","quepid-nightly-bot", "BugsBunny::Firefox@0967084"]
+    },    
+    "user_id": {
+      "description": "The user ID associated with the person performing the interactions being logged on the site. Can be null/empty in case of an unauthenticated user.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["5e3b2a1c-8b7d-4f2e-a3d4-c9b2e1f3a4b5"]
+    },
+    "timestamp": {
+      "description": "When the event took place.  This timestamp is formatted according to the ISO 8601 standard. _Please note that Opensearch requires a trailing `Z` or explicit timezone offset._",
+      "type": "string",
+      "format": "date-time",
+      "examples": ["2018-11-13T20:20:39+00:00", "2018-11-13T20:20:39Z", "2018-11-13T20:20:39"]
+    },
+    "message_type": {
+      "description": "Group various `action_name`'s into logical bins.",
+      "type": "string",
+      "maxLength": 100,
+      "examples": ["QUERY", "CONVERSION"],
+      "$comment": "TDB: action_type?  event_type?  Should the front end even define this?"
+    },
+    "message": {
+      "description": "Optional text message for the log entry. For example, for a message_type of QUERY, we would expect the text to be about what the user is searching on.",
+      "type": "string",
+      "maxLength": 1024
+    },
+    "user_query":{
+      "description": "The query as the user entered it.  No length limit specified.",
+      "type": "string",
+      "$comment": "Currently not required to support recommendation systems etc that might not have a user generated query."
+    },
+    "event_attributes": {
+      "description": "Extensible details about a specific event. A common example of an  _Additional Properties_ is the specific identifier of the user (`user_id`).  Note: a user identifier is different then the required `client_id` attribute.",
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["position"],
+      "properties": {
+        "object": {
+          "description": "Structure which contains identifying information of the object returned from the query that the user interacts with (i.e.: a book, a product, a post, etc..).",
+          "type": "object",
+          "additionalProperties": true,
+          "required": ["object_id"],
+          "properties": {
+            "object_id": {
+              "description": "The id that a user could look up and find the object instance within the *document corpus*.  Examples include: _ssn_, _isbn_, _ean_, etc. Variants need to be incorporated in the `object_id`, so for a t-shirt that is red, you would need SKU level as the `object_id`.",
+              "examples": ["XYZ-12345", "ISBN 0-061-96436-0", "123"],
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 256
+                },
+                {
+                  "type": "integer"
+                }
+              ]            
+            },
+            "object_id_type": {
+              "description": "The type of the object id that the user is searching for. For a social e-commerce site, these could include product, user, post, comment and so on.",
+              "oneOf": [
+                {
+                  "type": "string",
+                  "maxLength": 100,
+                  "enum": ["product", "user", "post", "comment", "video"]
+                },
+                {
+                  "type": "string",
+                  "maxLength": 100
+                }
+              ]
+            },
+            "object_id_field":{
+              "description": "The name of the field that has the id of the objects that will be stored in the backend queries data store. So it you have a query for products and want to save the SKUs, then this might be `sku` and if you are querying for people, maybe this is `ssn`.  If you do not provide this value then the default primary identifier in your search index will be used.  For example `_id` on OpenSearch. ",
+              "type": "string",
+              "maxLength": 100
+            },
+            "internal_id": {
+              "description": "A unique id that the an individual search engine uses internally to index the object via.  For example, in OpenSearch, think the `_id` field in the indices.",
+              "examples": ["1", "123456"],
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 256
+                },
+                {
+                  "type": "integer"
+                }
+              ]             
+            }            
+          }          
+        },        
+        "position": {
+          "description": "Structure that contains information on the location of the event origin, such as screen x,y coordinates, or the nth object out of 10 results.",
+          "type": "object",
+          "additionalProperties": true,          
+          "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "ordinal": {
+                        "description": "The nth position of the document on the search results page. For grid layout this would be left to right, ignoring wrapping.",
+                        "type": "integer",
+                        "examples": [1, 3, 24]
+                      }
+                    },
+                    "required": ["ordinal"]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "xy": {
+                        "description": "The x,y coordinates on the screen for triggering an event.",
+                        "$comment": "What about bounding boxes?",
+                        "type": "object",
+                        "properties": {
+                          "x": {
+                            "description": "The horizontal location on the page or screen of the event.",
+                            "type": "number"
+                          },
+                          "y": {
+                            "description": "The vertical location on the page or screen of the event.",
+                            "type": "number"
+                          }
+                        },
+                        "required": ["x", "y"]
+                      }
+                    },
+                    "required": ["xy"]
+                  }
+                ]
+        }   
+      }
+    }
+  }
+}
