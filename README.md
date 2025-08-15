@@ -70,13 +70,6 @@ You also have implementations to validate a JSON file programmatically in almost
 
 ---
 
-The Schema is documented by itself, but it's much easier to get "the big picture" with a graphical representation:
-
-<div align="center">
-  <img src='https://github.com/o19s/ubi/blob/main/assets/readme/UBI_diagram.png?raw=true' width='600px' alt="UBI Diagram">
- </div>
-<br />
-
 
 ## 🤔 Frequently Asked Questions
 
@@ -138,8 +131,7 @@ We sometimes refer to this shortcut architecture as "the Panama Canal", as in ta
 
 ### 🏫 Learn More
 
-* OpenSearchCon EU - [User Behavior Insights](https://www.youtube.com/watch?v=dH7SPHKpxo0&list=PLzgr9zSpws14zCETcKtCBwcOuTGMccpV9&index=32)
-* Haystack Conf 2024 - [Your Search Engine Needs a Memory](https://www.youtube.com/watch?v=QltMXXHcwTI)
+Check out [https://www.ubisearch.dev](https://www.ubisearch.dev) for all the latest information related to UBI.
 
 ## 🎨 Who uses it
 
