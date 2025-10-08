@@ -2,7 +2,7 @@
 
 # User Behavior Insights
 
-UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standard open source format to define and share user event tracking information**. The format is defined as a JSON Schema to validate queries and events defined as JSON objects.
+User Behavior Insights (UBI) is a proposed **standard open source format to define and share user event tracking information**. The format is defined as a JSON Schema to validate queries and events defined as JSON objects.
 
 <a href='https://github.com/o19s/ubi/releases'>
   <img alt="Version Badge" src="https://img.shields.io/github/v/release/o19s/ubi">
@@ -25,7 +25,7 @@ UBI (or User Behavior Insights) is a(nother) naive attempt to create **a standar
 
 ## 🥘 Why use it
 
-Many Search teams struggle with understanding "Why is my user doing this". They have great understanding of an incoming query and the documents returned, but no ability to connect that dot with an indicator of success, such as a click through event or add to cart event.
+Many Search teams struggle with understanding "Why is my user doing this". They understand the incoming queries and often the documents returned, but have no ability to connect the dots with an indicator of success ("conversion"), such as a click through event or add to cart event.
 
 There are A LOT of tools out there for tracking events, Google Analytics, Snowplow, etc, but each is a bit different, and each tends to lock you in. None of them address the specific unique needs of Search teams.
 
